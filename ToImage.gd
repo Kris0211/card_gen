@@ -6,7 +6,7 @@ extends Node
 func save_to(path):
 	await RenderingServer.frame_post_draw
 	var img = target_viewport.get_texture().get_image()
-	img.flip_y()
+	#img.flip_y()
 	return img.save_png(path)
 
 

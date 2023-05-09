@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1537u64hhr7j"]
+
+[ext_resource type="Script" path="res://logic/BasicCard.gd" id="1_54w88"]
+[ext_resource type="Texture2D" uid="uid://cd1kml1vkmyym" path="res://graphics/basic.png" id="2_pk0mm"]
+
+[node name="BasicCard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_54w88")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_pk0mm")
+stretch_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Name" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 9.0
+offset_right = 226.0
+offset_bottom = 45.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "[center][/center]"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="CardText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 203.0
+offset_right = 225.0
+offset_bottom = 321.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/italics_font_size = 12
+bbcode_enabled = true
+text = "
+[center][/center]"
+scroll_active = false
+shortcut_keys_enabled = false
