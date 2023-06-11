@@ -3,6 +3,7 @@ class_name BasicCard extends Control
 
 @export var card_name: String
 @export_multiline var card_text: String
+@export var amount: int = 1
 
 @onready var ref_card_name: RichTextLabel = $Name
 @onready var ref_card_text: RichTextLabel = $CardText

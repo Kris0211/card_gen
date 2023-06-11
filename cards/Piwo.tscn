@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsfdab6mgd3r4"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_ids47"]
+
+[node name="BasicCard" instance=ExtResource("1_ids47")]
+card_name = "Piwo"
+card_text = "Odnawia wybranemu studentowi 2 [color=#FF0000]Psychy[/color]."
+amount = 30
+
+[node name="Name" parent="." index="1"]
+text = "[center]Piwo[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Odnawia wybranemu studentowi 2 [color=#FF0000]Psychy[/color].[/center]"

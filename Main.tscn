@@ -1,3 +1,33 @@
-[gd_scene format=3 uid="uid://bqbb48knmb847"]
+[gd_scene load_steps=2 format=3 uid="uid://bqbb48knmb847"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_44s53"]
 
 [node name="Main" type="Node"]
+script = ExtResource("1_44s53")
+
+[node name="VBC" type="VBoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ExportOnce" type="Button" parent="VBC"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Export (each card once)"
+
+[node name="ExportAll" type="Button" parent="VBC"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Export (each card piece)"
+
+[node name="Label" type="Label" parent="VBC"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[connection signal="pressed" from="VBC/ExportOnce" to="." method="_on_export_once_pressed"]
+[connection signal="pressed" from="VBC/ExportAll" to="." method="_on_export_all_button_pressed"]
