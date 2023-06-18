@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://33elv0cd5cty"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_0ne0d"]
+
+[node name="BasicCard" instance=ExtResource("1_0ne0d")]
+card_name = "Długi weekend"
+card_text = "Każdy student jednorazowo leczy się o [color=#FF0000]5 Psychy[/color]."
+amount = 2
+
+[node name="Name" parent="." index="1"]
+text = "[center]Długi weekend[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Każdy student jednorazowo leczy się o [color=#FF0000]5 Psychy[/color].[/center]"

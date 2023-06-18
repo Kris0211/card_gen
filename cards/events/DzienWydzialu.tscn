@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cik3gnvltjwq7"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_imoxu"]
+
+[node name="BasicCard" instance=ExtResource("1_imoxu")]
+card_name = "Dzien Wydziału"
+card_text = "Pasywna umiejętność wykładowcy przestaje działać."
+
+[node name="Name" parent="." index="1"]
+text = "[center]Dzien Wydziału[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Pasywna umiejętność wykładowcy przestaje działać.[/center]"

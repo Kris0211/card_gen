@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://chkdilsnqxi2f"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_qk38g"]
+
+[node name="BasicCard" instance=ExtResource("1_qk38g")]
+card_name = "Tydzień zerówek"
+card_text = "Każde nowe zadanie traci po odkryciu -2 do każdego wymagania(?)."
+amount = 2
+
+[node name="Name" parent="." index="1"]
+text = "[center]Tydzień zerówek[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Każde nowe zadanie traci po odkryciu -2 do każdego wymagania(?).[/center]"

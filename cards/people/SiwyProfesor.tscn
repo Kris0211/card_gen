@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://3ggn8gu3q4u2"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_qnr7h"]
+
+[node name="BasicCard" instance=ExtResource("1_qnr7h")]
+card_name = "Siwy profesor"
+card_text = "Każde zadanie po odkryciu dostaje +3 do wymaganej wiedzy, ale -1 do odwagi."
+center_text = false
+
+[node name="Name" parent="." index="1"]
+text = "[center]Siwy profesor[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "[center]Każde zadanie po odkryciu dostaje +3 do wymaganej wiedzy, ale -1 do odwagi.[/center]"

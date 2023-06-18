@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsiq26q4egcjw"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_3jrxe"]
+
+[node name="BasicCard" instance=ExtResource("1_3jrxe")]
+card_name = "ERASMUS"
+card_text = "Każdy gracz może wymienić swojego studenta na innego."
+
+[node name="Name" parent="." index="1"]
+text = "[center]ERASMUS[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Każdy gracz może wymienić swojego studenta na innego.[/center]"

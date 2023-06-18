@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0r62dumip8aa"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_8hvsu"]
+
+[node name="BasicCard" instance=ExtResource("1_8hvsu")]
+card_name = "Doktorant"
+card_text = "Każdy student po rzucie musi przerzucić jedną ze swoich kości."
+amount = 2
+
+[node name="Name" parent="." index="1"]
+text = "[center]Doktorant[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Każdy student po rzucie musi przerzucić jedną ze swoich kości.[/center]"
