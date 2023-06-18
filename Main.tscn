@@ -14,20 +14,42 @@ grow_vertical = 2
 alignment = 1
 
 [node name="ExportOnce" type="Button" parent="VBC"]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-text = "Export (each card once)"
+text = "Export items (each card once)"
 
-[node name="ExportAll" type="Button" parent="VBC"]
+[node name="ExportItems" type="Button" parent="VBC"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-text = "Export (each card piece)"
+text = "Export items"
+
+[node name="ExportAssignments" type="Button" parent="VBC"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Export assignments"
+
+[node name="ExportEvents" type="Button" parent="VBC"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Export events"
+
+[node name="ExportPeople" type="Button" parent="VBC"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Export people"
 
 [node name="Label" type="Label" parent="VBC"]
 layout_mode = 2
 horizontal_alignment = 1
 
 [connection signal="pressed" from="VBC/ExportOnce" to="." method="_on_export_once_pressed"]
-[connection signal="pressed" from="VBC/ExportAll" to="." method="_on_export_all_button_pressed"]
+[connection signal="pressed" from="VBC/ExportItems" to="." method="_on_export_all_button_pressed"]
+[connection signal="pressed" from="VBC/ExportAssignments" to="." method="_on_export_assignments_pressed"]
+[connection signal="pressed" from="VBC/ExportEvents" to="." method="_on_export_events_pressed"]
+[connection signal="pressed" from="VBC/ExportPeople" to="." method="_on_export_people_pressed"]

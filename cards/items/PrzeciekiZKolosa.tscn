@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://wxwewtrkt0n0"]
+[gd_scene load_steps=2 format=3 uid="uid://b8w5rryiyjseg"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_dkemh"]
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_b8kwe"]
 
-[node name="BasicCard" instance=ExtResource("1_dkemh")]
+[node name="BasicCard" instance=ExtResource("1_b8kwe")]
 card_name = "Przecieki z kolosa"
 card_text = "Zamień jedną ze swoich kostek na [color=#FF0000]Spryt[/color]."
 amount = 8

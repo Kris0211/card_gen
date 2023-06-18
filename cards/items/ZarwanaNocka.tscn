@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b818febpbg2yg"]
+[gd_scene load_steps=2 format=3 uid="uid://cw473y2nohtt3"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_q2fgq"]
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_pqw3l"]
 
-[node name="BasicCard" instance=ExtResource("1_q2fgq")]
+[node name="BasicCard" instance=ExtResource("1_pqw3l")]
 card_name = "Zarwana nocka"
 card_text = "Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale otrzymujesz +2 do [color=#FF0000]Wiedzy[/color] do końca tury."
 amount = 12

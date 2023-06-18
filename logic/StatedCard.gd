@@ -20,6 +20,6 @@ func _process(_delta):
 	first_icon.texture = first_stat_icon
 	second_icon.texture = second_stat_icon
 	third_icon.texture = third_stat_icon
-	#first_value.text = "[center]" + str(first_stat_value) + "[/center]"
-	#second_value.text = "[center]" + str(second_stat_value) + "[/center]"
-	#third_value.text = "[center]" + str(third_stat_value) + "[/center]"
+	first_value.text = "[center]" + str(first_stat_value) + "[/center]"
+	second_value.text = "[center]" + str(second_stat_value) + "[/center]"
+	third_value.text = "[center]" + str(third_stat_value) + "[/center]"

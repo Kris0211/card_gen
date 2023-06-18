@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbiaq0a0aby17"]
+
+[ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_j4ge4"]
+
+[node name="StatedCard" instance=ExtResource("1_j4ge4")]
+first_stat_value = 4
+second_stat_value = 4
+third_stat_value = 4
+card_name = "Wejściówka"
+card_text = "Jeśli nie zostanie rozwiązana w ciągu jednej tury, to znika i każdy student traci [color=#FF0000]5 Psychy[/color]."
+center_text = false
+amount = 2
+
+[node name="Name" parent="." index="1"]
+text = "[center]Wejściówka[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "[center]Jeśli nie zostanie rozwiązana w ciągu jednej tury, to znika i każdy student traci [color=#FF0000]5 Psychy[/color].[/center]"
+
+[node name="Value" parent="Stats/Stat1" index="1"]
+text = "[center]4[/center]"
+
+[node name="Value" parent="Stats/Stat2" index="1"]
+text = "[center]4[/center]"
+
+[node name="Value" parent="Stats/Stat3" index="1"]
+text = "[center]4[/center]"

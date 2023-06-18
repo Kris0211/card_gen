@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://8emqjmh4vyop"]
+[gd_scene load_steps=2 format=3 uid="uid://bxmbeugn6p5y4"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_3vgoc"]
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_hsdqd"]
 
-[node name="BasicCard" instance=ExtResource("1_3vgoc")]
+[node name="BasicCard" instance=ExtResource("1_hsdqd")]
 card_name = "Szablon egzaminu"
 card_text = "Zamień jedną ze swoich kostek na [color=#FF0000]Odwagę[/color]."
 amount = 8

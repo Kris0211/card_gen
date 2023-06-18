@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://kewllcvt57ml"]
+[gd_scene load_steps=2 format=3 uid="uid://bybps0ed30a8o"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_thhc6"]
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_chqoi"]
 
-[node name="BasicCard" instance=ExtResource("1_thhc6")]
+[node name="BasicCard" instance=ExtResource("1_chqoi")]
 card_name = "Orenżada"
 card_text = "Otrzymujesz +1 [color=#FF0000]Sprytu[/color] 
 w tej turze."

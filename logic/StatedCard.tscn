@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://d4mlv7l1yrpco"]
+[gd_scene load_steps=6 format=3 uid="uid://d4mlv7l1yrpco"]
 
 [ext_resource type="Script" path="res://logic/StatedCard.gd" id="1_8off8"]
+[ext_resource type="Texture2D" uid="uid://cdg4mwrpolh6q" path="res://graphics/KSIAZKA.png" id="2_3fn57"]
 [ext_resource type="Texture2D" uid="uid://b56orrbihig7" path="res://graphics/student.png" id="2_6mxsm"]
+[ext_resource type="Texture2D" uid="uid://ded20bet3dhed" path="res://graphics/ZAROWKA.png" id="3_nd12q"]
+[ext_resource type="Texture2D" uid="uid://byulcsa5c0m6o" path="res://graphics/MIECZ.png" id="4_6exss"]
 
 [node name="StatedCard" type="Control"]
 layout_mode = 3
@@ -11,7 +14,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8off8")
-amount = null
+first_stat_icon = ExtResource("2_3fn57")
+second_stat_icon = ExtResource("3_nd12q")
+third_stat_icon = ExtResource("4_6exss")
+center_text = null
+amount = true
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -66,11 +73,14 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Icon" type="TextureRect" parent="Stats/Stat1"]
+modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 4.0
 offset_top = 4.0
-offset_right = 35.0
+offset_right = 36.0
 offset_bottom = 36.0
+texture = ExtResource("2_3fn57")
+expand_mode = 1
 
 [node name="Value" type="RichTextLabel" parent="Stats/Stat1"]
 layout_mode = 0
@@ -80,8 +90,7 @@ offset_right = 58.0
 offset_bottom = 33.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
-text = "
-"
+text = "[center]0[/center]"
 scroll_active = false
 
 [node name="Stat2" type="Control" parent="Stats"]
@@ -92,9 +101,12 @@ offset_right = 118.0
 offset_bottom = 36.0
 
 [node name="Icon" type="TextureRect" parent="Stats/Stat2"]
+modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_right = 27.0
+offset_right = 32.0
 offset_bottom = 32.0
+texture = ExtResource("3_nd12q")
+expand_mode = 1
 
 [node name="Value" type="RichTextLabel" parent="Stats/Stat2"]
 layout_mode = 0
@@ -104,6 +116,7 @@ offset_right = 56.0
 offset_bottom = 28.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
+text = "[center]0[/center]"
 scroll_active = false
 
 [node name="Stat3" type="Control" parent="Stats"]
@@ -114,9 +127,12 @@ offset_right = 176.0
 offset_bottom = 36.0
 
 [node name="Icon" type="TextureRect" parent="Stats/Stat3"]
+modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_right = 25.0
+offset_right = 32.0
 offset_bottom = 32.0
+texture = ExtResource("4_6exss")
+expand_mode = 1
 
 [node name="Value" type="RichTextLabel" parent="Stats/Stat3"]
 layout_mode = 0
@@ -126,4 +142,5 @@ offset_right = 54.0
 offset_bottom = 25.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
+text = "[center]0[/center]"
 scroll_active = false
