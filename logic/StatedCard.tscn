@@ -80,7 +80,8 @@ offset_right = 58.0
 offset_bottom = 33.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
-text = "[center]0[/center]"
+text = "
+"
 scroll_active = false
 
 [node name="Stat2" type="Control" parent="Stats"]
@@ -103,7 +104,6 @@ offset_right = 56.0
 offset_bottom = 28.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
-text = "[center]0[/center]"
 scroll_active = false
 
 [node name="Stat3" type="Control" parent="Stats"]
@@ -126,5 +126,4 @@ offset_right = 54.0
 offset_bottom = 25.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 bbcode_enabled = true
-text = "[center]0[/center]"
 scroll_active = false

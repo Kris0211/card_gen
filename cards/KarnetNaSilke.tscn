@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://bauii7uu2erc7"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_1tka1"]
+
+[node name="BasicCard" instance=ExtResource("1_1tka1")]
+card_name = "Karnet na siłkę"
+card_text = "Za każdym razem gdy tracisz [color=#FF0000]Psychę[/color], tracisz 
+1 punkt [color=#FF0000]Psychy[/color] mniej."
+amount = 4
+
+[node name="Name" parent="." index="1"]
+text = "[center]Karnet na siłkę[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Za każdym razem gdy tracisz [color=#FF0000]Psychę[/color], tracisz 
+1 punkt [color=#FF0000]Psychy[/color] mniej.[/center]"

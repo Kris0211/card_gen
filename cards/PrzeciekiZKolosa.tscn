@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://wxwewtrkt0n0"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_dkemh"]
+
+[node name="BasicCard" instance=ExtResource("1_dkemh")]
+card_name = "Przecieki z kolosa"
+card_text = "Zamień jedną ze swoich kostek na [color=#FF0000]Spryt[/color]."
+amount = 8
+
+[node name="Name" parent="." index="1"]
+text = "[center]Przecieki z kolosa[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Zamień jedną ze swoich kostek na [color=#FF0000]Spryt[/color].[/center]"

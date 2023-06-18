@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjykkgu7xog6f"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_tl55i"]
+
+[node name="BasicCard" instance=ExtResource("1_tl55i")]
+card_name = "Kebab"
+card_text = "[color=#FF0000]???[/color] 
+"
+amount = 0
+
+[node name="Name" parent="." index="1"]
+text = "[center]Kebab[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center][color=#FF0000]???[/color] 
+[/center]"

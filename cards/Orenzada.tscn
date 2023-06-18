@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://kewllcvt57ml"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_thhc6"]
+
+[node name="BasicCard" instance=ExtResource("1_thhc6")]
+card_name = "Orenżada"
+card_text = "Otrzymujesz +1 [color=#FF0000]Sprytu[/color] 
+w tej turze."
+amount = 15
+
+[node name="Name" parent="." index="1"]
+text = "[center]Orenżada[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Otrzymujesz +1 [color=#FF0000]Sprytu[/color] 
+w tej turze.[/center]"
