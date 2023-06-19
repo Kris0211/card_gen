@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://begjiwyynyaip"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_lk8cx"]
+
+[node name="BasicCard" instance=ExtResource("1_lk8cx")]
+card_name = "SERWERY PŁONĄ!"
+card_text = "Wszystkie wymagania obecnego zadania zostają przerzucone."
+
+[node name="Name" parent="." index="1"]
+text = "[center]SERWERY PŁONĄ![/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Wszystkie wymagania obecnego zadania zostają przerzucone.[/center]"

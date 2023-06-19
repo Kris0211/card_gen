@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dsuf7eimu2ig8"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_ducgr"]
+
+[node name="BasicCard" instance=ExtResource("1_ducgr")]
+card_name = "Konsultacje"
+card_text = "Przerzuć dowolną ilość kości, które jeszcze nie zostały odłożone."
+amount = 5
+
+[node name="Name" parent="." index="1"]
+text = "[center]Konsultacje[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Przerzuć dowolną ilość kości, które jeszcze nie zostały odłożone.[/center]"

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b260820c3phk4"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_h3pmx"]
+
+[node name="BasicCard" instance=ExtResource("1_h3pmx")]
+card_name = "Hospitacja"
+card_text = "Wykładowca zostaje zamieniony na losowego innego wykładowcę."
+
+[node name="Name" parent="." index="1"]
+text = "[center]Hospitacja[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Wykładowca zostaje zamieniony na losowego innego wykładowcę.[/center]"

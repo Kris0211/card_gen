@@ -4,9 +4,9 @@ extends BasicCard
 @export var first_stat_icon: Texture
 @export var second_stat_icon: Texture
 @export var third_stat_icon: Texture
-@export var first_stat_value: int
-@export var second_stat_value: int
-@export var third_stat_value: int
+@export var first_stat_value: String
+@export var second_stat_value: String
+@export var third_stat_value: String
 
 @onready var first_icon := $Stats/Stat1/Icon
 @onready var second_icon := $Stats/Stat2/Icon

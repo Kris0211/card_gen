@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbatafwdaiut4"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_g0kld"]
+
+[node name="BasicCard" instance=ExtResource("1_g0kld")]
+scale = Vector2(1, 0.996336)
+card_name = "Obrazliwy mem"
+card_text = "Wymagana odwaga wzrasta do 12."
+
+[node name="Name" parent="." index="1"]
+text = "[center]Obrazliwy mem[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Wymagana odwaga wzrasta do 12.[/center]"

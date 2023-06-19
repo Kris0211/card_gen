@@ -5,7 +5,7 @@
 [node name="BasicCard" instance=ExtResource("1_hsdqd")]
 card_name = "Szablon egzaminu"
 card_text = "Zamień jedną ze swoich kostek na [color=#FF0000]Odwagę[/color]."
-amount = 8
+amount = 5
 
 [node name="Name" parent="." index="1"]
 text = "[center]Szablon egzaminu[/center]"

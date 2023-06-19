@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://tbdorhpe7gq7"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_1xslw"]
+
+[node name="BasicCard" instance=ExtResource("1_1xslw")]
+card_name = "Zmiana programu"
+card_text = "Po odkryciu zadania musicie przerzucić kość pokazującą wymaganą wiedzę."
+center_text = false
+
+[node name="Name" parent="." index="1"]
+text = "[center]Zmiana programu[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "[center]Po odkryciu zadania musicie przerzucić kość pokazującą wymaganą wiedzę.[/center]"

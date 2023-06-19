@@ -5,7 +5,7 @@
 [node name="BasicCard" instance=ExtResource("1_b8kwe")]
 card_name = "Przecieki z kolosa"
 card_text = "Zamień jedną ze swoich kostek na [color=#FF0000]Spryt[/color]."
-amount = 8
+amount = 5
 
 [node name="Name" parent="." index="1"]
 text = "[center]Przecieki z kolosa[/center]"

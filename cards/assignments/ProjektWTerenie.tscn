@@ -4,25 +4,23 @@
 
 [node name="StatedCard" instance=ExtResource("1_t6k4e")]
 first_stat_value = 3
-second_stat_value = 13
-third_stat_value = 12
+second_stat_value = 10
+third_stat_value = 5
 card_name = "Projekt w terenie"
-card_text = "Na koniec tury każdy student traci [color=#FF0000]1 Psychy[/color]."
-center_text = true
-amount = 2
+card_text = "Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color]."
 
 [node name="Name" parent="." index="1"]
 text = "[center]Projekt w terenie[/center]"
 
 [node name="CardText" parent="." index="2"]
 text = "
-[center]Na koniec tury każdy student traci [color=#FF0000]1 Psychy[/color].[/center]"
+[center]Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color].[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="1"]
 text = "[center]3[/center]"
 
 [node name="Value" parent="Stats/Stat2" index="1"]
-text = "[center]13[/center]"
+text = "[center]10[/center]"
 
 [node name="Value" parent="Stats/Stat3" index="1"]
-text = "[center]12[/center]"
+text = "[center]5[/center]"

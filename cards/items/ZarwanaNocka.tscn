@@ -4,12 +4,12 @@
 
 [node name="BasicCard" instance=ExtResource("1_pqw3l")]
 card_name = "Zarwana nocka"
-card_text = "Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale otrzymujesz +2 do [color=#FF0000]Wiedzy[/color] do końca tury."
-amount = 12
+card_text = "Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale otrzymujesz +3 do [color=#FF0000]Wiedzy[/color] do końca tury."
+amount = 10
 
 [node name="Name" parent="." index="1"]
 text = "[center]Zarwana nocka[/center]"
 
 [node name="CardText" parent="." index="2"]
 text = "
-[center]Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale otrzymujesz +2 do [color=#FF0000]Wiedzy[/color] do końca tury.[/center]"
+[center]Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale otrzymujesz +3 do [color=#FF0000]Wiedzy[/color] do końca tury.[/center]"

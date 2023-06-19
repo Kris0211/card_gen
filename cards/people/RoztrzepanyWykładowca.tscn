@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://d1ac33npur83u"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_7yh2t"]
+
+[node name="BasicCard" instance=ExtResource("1_7yh2t")]
+card_name = "Zakręcony Wykładowca"
+card_text = "Każdemu zadaniu towarzyszą dwa wydarzenia zamiast jednego."
+center_text = false
+
+[node name="Name" parent="." index="1"]
+theme_override_font_sizes/normal_font_size = 18
+text = "[center]Zakręcony Wykładowca[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "[center]Każdemu zadaniu towarzyszą dwa wydarzenia zamiast jednego.[/center]"

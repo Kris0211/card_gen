@@ -3,13 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_i7bkt"]
 
 [node name="StatedCard" instance=ExtResource("1_i7bkt")]
-first_stat_value = 11
-second_stat_value = 7
-third_stat_value = 13
+first_stat_value = 9
+second_stat_value = 6
+third_stat_value = 11
 card_name = "Egzamin ustny"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color]."
-center_text = true
-amount = 2
 
 [node name="Name" parent="." index="1"]
 text = "[center]Egzamin ustny[/center]"
@@ -19,10 +17,10 @@ text = "
 [center]Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color].[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="1"]
-text = "[center]11[/center]"
+text = "[center]9[/center]"
 
 [node name="Value" parent="Stats/Stat2" index="1"]
-text = "[center]7[/center]"
+text = "[center]6[/center]"
 
 [node name="Value" parent="Stats/Stat3" index="1"]
-text = "[center]13[/center]"
+text = "[center]11[/center]"

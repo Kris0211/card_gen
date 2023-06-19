@@ -7,9 +7,8 @@ first_stat_value = 3
 second_stat_value = 19
 third_stat_value = 2
 card_name = "Projekt artystyczny"
-card_text = "Jeśli student wyrzucił spryt, odzyskuje [color=#FF0000]1 Psychy[/color] na koniec tury. W przeciwnym razie traci [color=#FF0000]4 Psychy[/color]."
+card_text = "Jeśli student nie wyrzucił sprytu, to traci [color=#FF0000]4 Psychy[/color] na koniec tury."
 center_text = false
-amount = 2
 
 [node name="Name" parent="." index="1"]
 theme_override_font_sizes/normal_font_size = 22
@@ -17,7 +16,7 @@ text = "[center]Projekt artystyczny[/center]"
 
 [node name="CardText" parent="." index="2"]
 theme_override_font_sizes/normal_font_size = 15
-text = "[center]Jeśli student wyrzucił spryt, odzyskuje [color=#FF0000]1 Psychy[/color] na koniec tury. W przeciwnym razie traci [color=#FF0000]4 Psychy[/color].[/center]"
+text = "[center]Jeśli student nie wyrzucił sprytu, to traci [color=#FF0000]4 Psychy[/color] na koniec tury.[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="1"]
 text = "[center]3[/center]"

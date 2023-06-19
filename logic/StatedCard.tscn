@@ -15,10 +15,8 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8off8")
 first_stat_icon = ExtResource("2_3fn57")
-second_stat_icon = ExtResource("3_nd12q")
-third_stat_icon = ExtResource("4_6exss")
-center_text = null
-amount = true
+second_stat_icon = ExtResource("4_6exss")
+third_stat_icon = ExtResource("3_nd12q")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -105,7 +103,7 @@ modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_right = 32.0
 offset_bottom = 32.0
-texture = ExtResource("3_nd12q")
+texture = ExtResource("4_6exss")
 expand_mode = 1
 
 [node name="Value" type="RichTextLabel" parent="Stats/Stat2"]
@@ -131,7 +129,7 @@ modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_right = 32.0
 offset_bottom = 32.0
-texture = ExtResource("4_6exss")
+texture = ExtResource("3_nd12q")
 expand_mode = 1
 
 [node name="Value" type="RichTextLabel" parent="Stats/Stat3"]

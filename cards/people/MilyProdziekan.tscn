@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxudrejjpvm8l"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_5chdm"]
+
+[node name="BasicCard" instance=ExtResource("1_5chdm")]
+card_name = "Miły Prodziekan"
+card_text = "Po odkryciu zdania musicie przerzucić jedną z kości wymagań."
+
+[node name="Name" parent="." index="1"]
+text = "[center]Miły Prodziekan[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Po odkryciu zdania musicie przerzucić jedną z kości wymagań.[/center]"

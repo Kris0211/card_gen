@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6q5tnsx1t2uy"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_muith"]
+
+[node name="BasicCard" instance=ExtResource("1_muith")]
+card_name = "Ambitny Magister"
+card_text = "Aby zdać, musicie zaliczyć o jedno zadanie mniej, ale każde zdanie dostaje +2 do każdej statystyki."
+center_text = false
+
+[node name="Name" parent="." index="1"]
+text = "[center]Ambitny Magister[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "[center]Aby zdać, musicie zaliczyć o jedno zadanie mniej, ale każde zdanie dostaje +2 do każdej statystyki.[/center]"

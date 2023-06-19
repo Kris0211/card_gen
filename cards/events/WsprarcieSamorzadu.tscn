@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://dnms5iagvjw2v"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_j7eel"]
+
+[node name="BasicCard" instance=ExtResource("1_j7eel")]
+card_name = "Wsparcie Samorządu"
+card_text = "Każdy student dobiera jedną kartę."
+
+[node name="Name" parent="." index="1"]
+theme_override_font_sizes/normal_font_size = 20
+text = "[center]Wsparcie Samorządu[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Każdy student dobiera jedną kartę.[/center]"

@@ -6,7 +6,7 @@
 card_name = "Karnet na siłkę"
 card_text = "Za każdym razem gdy tracisz [color=#FF0000]Psychę[/color], tracisz 
 1 punkt [color=#FF0000]Psychy[/color] mniej."
-amount = 4
+amount = 5
 
 [node name="Name" parent="." index="1"]
 text = "[center]Karnet na siłkę[/center]"

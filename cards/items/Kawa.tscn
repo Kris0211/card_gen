@@ -6,7 +6,7 @@
 card_name = "Kawa"
 card_text = "Otrzymujesz +1 [color=#FF0000]Wiedzy[/color] 
 w tej turze."
-amount = 15
+amount = 5
 
 [node name="Name" parent="." index="1"]
 text = "[center]Kawa[/center]"

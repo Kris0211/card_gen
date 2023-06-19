@@ -6,7 +6,7 @@
 card_name = "Kebab"
 card_text = "Jednorazowo uniknij utraty [color=#FF0000]Psychy[/color].
 "
-amount = 10
+amount = 5
 
 [node name="Name" parent="." index="1"]
 text = "[center]Kebab[/center]"
