@@ -1,10 +1,28 @@
-[gd_scene load_steps=6 format=3 uid="uid://d4mlv7l1yrpco"]
+[gd_scene load_steps=11 format=3 uid="uid://d4mlv7l1yrpco"]
 
 [ext_resource type="Script" path="res://logic/StatedCard.gd" id="1_8off8"]
 [ext_resource type="Texture2D" uid="uid://cdg4mwrpolh6q" path="res://graphics/KSIAZKA.png" id="2_3fn57"]
-[ext_resource type="Texture2D" uid="uid://b56orrbihig7" path="res://graphics/student.png" id="2_6mxsm"]
 [ext_resource type="Texture2D" uid="uid://ded20bet3dhed" path="res://graphics/ZAROWKA.png" id="3_nd12q"]
 [ext_resource type="Texture2D" uid="uid://byulcsa5c0m6o" path="res://graphics/MIECZ.png" id="4_6exss"]
+[ext_resource type="Texture2D" uid="uid://cuu8h2u0h0ybb" path="res://images/students/madrala.png" id="5_6jg5v"]
+[ext_resource type="StyleBox" uid="uid://bsuji6wg3ernk" path="res://themes/StatBox.tres" id="5_yly75"]
+[ext_resource type="FontFile" uid="uid://j1cr6vj06n8t" path="res://EdoPL.ttf" id="6_glmh8"]
+[ext_resource type="Texture2D" uid="uid://l8a7yea5p3kq" path="res://images/FancySeparator.bmp" id="7_q8sw5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6yn"]
+bg_color = Color(0.764706, 0.764706, 0.764706, 1)
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhw1g"]
+bg_color = Color(0.917647, 0.917647, 0.917647, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
 
 [node name="StatedCard" type="Control"]
 layout_mode = 3
@@ -17,128 +35,201 @@ script = ExtResource("1_8off8")
 first_stat_icon = ExtResource("2_3fn57")
 second_stat_icon = ExtResource("4_6exss")
 third_stat_icon = ExtResource("3_nd12q")
+first_stat_value = "12"
+second_stat_value = "12"
+third_stat_value = "12"
+card_name = "Mądrala"
+card_text = "
+Posiada kości, które po rzucie liczą się jako dwie kości. Taka kość liczy się jako para."
+center_text = false
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="ColorBackground" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_6mxsm")
-stretch_mode = 2
-metadata/_edit_lock_ = true
+color = Color(0, 0, 0, 1)
+
+[node name="PanelStats" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 380.0
+offset_right = 480.0
+offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lp6yn")
+
+[node name="PanelText" type="Panel" parent="."]
+layout_mode = 0
+offset_top = 426.0
+offset_right = 380.0
+offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mhw1g")
+
+[node name="Image" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 380.0
+offset_bottom = 427.0
+texture = ExtResource("5_6jg5v")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="Name" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 9.0
-offset_right = 226.0
-offset_bottom = 45.0
+offset_top = 427.0
+offset_right = 380.0
+offset_bottom = 483.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 24
+theme_override_fonts/normal_font = ExtResource("6_glmh8")
+theme_override_fonts/italics_font = ExtResource("6_glmh8")
+theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "[center][/center]"
+text = "[center]Mądrala[/center]"
 scroll_active = false
 shortcut_keys_enabled = false
+
+[node name="Flavour" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_top = 482.0
+offset_right = 378.0
+offset_bottom = 506.0
+theme_override_colors/default_color = Color(0.278431, 0.278431, 0.278431, 1)
+theme_override_fonts/normal_font = ExtResource("6_glmh8")
+theme_override_fonts/italics_font = ExtResource("6_glmh8")
+theme_override_font_sizes/normal_font_size = 0
+theme_override_font_sizes/italics_font_size = 20
+bbcode_enabled = true
+text = "[center][i]I tak wykładowca wie lepiej[/i][/center]"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Separator" type="TextureRect" parent="."]
+self_modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 18.0
+offset_top = 498.0
+offset_right = 359.0
+offset_bottom = 532.0
+texture = ExtResource("7_q8sw5")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="CardText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 17.0
-offset_top = 222.0
-offset_right = 225.0
-offset_bottom = 321.0
+offset_left = 4.0
+offset_top = 526.0
+offset_right = 376.0
+offset_bottom = 716.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 16
+theme_override_fonts/normal_font = ExtResource("6_glmh8")
+theme_override_fonts/italics_font = ExtResource("6_glmh8")
+theme_override_font_sizes/normal_font_size = 26
 theme_override_font_sizes/italics_font_size = 12
 bbcode_enabled = true
-text = "
-[center][/center]"
+text = "[center]
+Posiada kości, które po rzucie liczą się jako dwie kości. Taka kość liczy się jako para.[/center]"
 scroll_active = false
 shortcut_keys_enabled = false
 
-[node name="Stats" type="Control" parent="."]
+[node name="Stats" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 0
-offset_left = 30.0
-offset_top = 181.0
-offset_right = 210.0
-offset_bottom = 221.0
+offset_left = 390.0
+offset_top = 50.0
+offset_right = 470.0
+offset_bottom = 670.0
+theme_override_constants/separation = 0
+alignment = 1
 
-[node name="Stat1" type="Control" parent="Stats"]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Stat1" type="VBoxContainer" parent="Stats"]
+layout_mode = 2
+size_flags_vertical = 6
 
-[node name="Icon" type="TextureRect" parent="Stats/Stat1"]
+[node name="Panel" type="Panel" parent="Stats/Stat1"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 6
+theme_override_styles/panel = ExtResource("5_yly75")
+
+[node name="Icon" type="TextureRect" parent="Stats/Stat1/Panel"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_left = 4.0
-offset_top = 4.0
-offset_right = 36.0
-offset_bottom = 36.0
+offset_right = 80.0
+offset_bottom = 80.0
 texture = ExtResource("2_3fn57")
 expand_mode = 1
 
 [node name="Value" type="RichTextLabel" parent="Stats/Stat1"]
-layout_mode = 0
-offset_left = 36.0
-offset_top = 8.0
-offset_right = 58.0
-offset_bottom = 33.0
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_vertical = 3
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_glmh8")
+theme_override_fonts/italics_font = ExtResource("6_glmh8")
+theme_override_font_sizes/normal_font_size = 42
 bbcode_enabled = true
-text = "[center]0[/center]"
+text = "[center]1[/center]"
 scroll_active = false
 
-[node name="Stat2" type="Control" parent="Stats"]
-anchors_preset = 0
-offset_left = 62.0
-offset_top = 4.0
-offset_right = 118.0
-offset_bottom = 36.0
+[node name="Stat2" type="VBoxContainer" parent="Stats"]
+layout_mode = 2
+size_flags_vertical = 6
 
-[node name="Icon" type="TextureRect" parent="Stats/Stat2"]
+[node name="Panel" type="Panel" parent="Stats/Stat2"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 6
+theme_override_styles/panel = ExtResource("5_yly75")
+
+[node name="Icon" type="TextureRect" parent="Stats/Stat2/Panel"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_right = 32.0
-offset_bottom = 32.0
+offset_right = 80.0
+offset_bottom = 80.0
 texture = ExtResource("4_6exss")
 expand_mode = 1
 
 [node name="Value" type="RichTextLabel" parent="Stats/Stat2"]
-layout_mode = 0
-offset_left = 32.0
-offset_top = 4.0
-offset_right = 56.0
-offset_bottom = 28.0
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_vertical = 3
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_glmh8")
+theme_override_fonts/italics_font = ExtResource("6_glmh8")
+theme_override_font_sizes/normal_font_size = 42
 bbcode_enabled = true
-text = "[center]0[/center]"
+text = "[center]2[/center]"
 scroll_active = false
 
-[node name="Stat3" type="Control" parent="Stats"]
-anchors_preset = 0
-offset_left = 122.0
-offset_top = 4.0
-offset_right = 176.0
-offset_bottom = 36.0
+[node name="Stat3" type="VBoxContainer" parent="Stats"]
+layout_mode = 2
+size_flags_vertical = 6
 
-[node name="Icon" type="TextureRect" parent="Stats/Stat3"]
+[node name="Panel" type="Panel" parent="Stats/Stat3"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 6
+theme_override_styles/panel = ExtResource("5_yly75")
+
+[node name="Icon" type="TextureRect" parent="Stats/Stat3/Panel"]
 modulate = Color(0, 0, 0, 1)
 layout_mode = 0
-offset_right = 32.0
-offset_bottom = 32.0
+offset_right = 80.0
+offset_bottom = 80.0
 texture = ExtResource("3_nd12q")
 expand_mode = 1
 
 [node name="Value" type="RichTextLabel" parent="Stats/Stat3"]
-layout_mode = 0
-offset_left = 32.0
-offset_top = 4.0
-offset_right = 54.0
-offset_bottom = 25.0
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_vertical = 3
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("6_glmh8")
+theme_override_fonts/italics_font = ExtResource("6_glmh8")
+theme_override_font_sizes/normal_font_size = 42
 bbcode_enabled = true
-text = "[center]0[/center]"
+text = "[center]3[/center]"
 scroll_active = false

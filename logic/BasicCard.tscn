@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2nm0fw4a8i4t"]
+[gd_scene load_steps=6 format=3 uid="uid://b2nm0fw4a8i4t"]
 
 [ext_resource type="Script" path="res://logic/BasicCard.gd" id="1_54w88"]
-[ext_resource type="Texture2D" uid="uid://cd1kml1vkmyym" path="res://graphics/basic.png" id="2_pk0mm"]
+[ext_resource type="Texture2D" uid="uid://cv0534jmsg67a" path="res://images/items/energol.png" id="2_defnf"]
+[ext_resource type="FontFile" uid="uid://j1cr6vj06n8t" path="res://EdoPL.ttf" id="3_0igph"]
+[ext_resource type="Texture2D" uid="uid://l8a7yea5p3kq" path="res://images/FancySeparator.bmp" id="4_ss5gb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_blt7g"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
 
 [node name="BasicCard" type="Control"]
 layout_mode = 3
@@ -10,43 +20,96 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.00846, 0.995944)
 script = ExtResource("1_54w88")
+card_name = "Energol"
+card_text = "Kości kości kości 
+Kości kości kości 
+Kości kości kości 
+Kości kości kości 
+"
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="ColorBackground" type="ColorRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_pk0mm")
-stretch_mode = 2
-metadata/_edit_lock_ = true
+
+[node name="PanelText" type="Panel" parent="."]
+layout_mode = 0
+offset_top = 426.0
+offset_right = 480.0
+offset_bottom = 720.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_blt7g")
+
+[node name="Image" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 469.0
+offset_bottom = 427.0
+texture = ExtResource("2_defnf")
+expand_mode = 1
+stretch_mode = 6
 
 [node name="Name" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 16.0
-offset_top = 9.0
-offset_right = 226.0
-offset_bottom = 45.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 24
+offset_top = 430.0
+offset_right = 480.0
+offset_bottom = 483.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_0igph")
+theme_override_fonts/italics_font = ExtResource("3_0igph")
+theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "[center][/center]"
+text = "[center]Energol[/center]"
 scroll_active = false
 shortcut_keys_enabled = false
 
+[node name="Flavour" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_top = 487.0
+offset_right = 480.0
+offset_bottom = 511.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_0igph")
+theme_override_fonts/italics_font = ExtResource("3_0igph")
+theme_override_font_sizes/normal_font_size = 0
+theme_override_font_sizes/italics_font_size = 20
+bbcode_enabled = true
+text = "[center][i]Od razu masz siłę do działania![/i][/center]"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Separator" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 515.0
+offset_right = 448.0
+offset_bottom = 549.0
+texture = ExtResource("4_ss5gb")
+expand_mode = 1
+stretch_mode = 5
+
 [node name="CardText" type="RichTextLabel" parent="."]
 layout_mode = 0
-offset_left = 17.0
-offset_top = 203.0
-offset_right = 225.0
-offset_bottom = 321.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 16
+offset_left = 31.0
+offset_top = 526.0
+offset_right = 446.0
+offset_bottom = 716.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("3_0igph")
+theme_override_fonts/italics_font = ExtResource("3_0igph")
+theme_override_font_sizes/normal_font_size = 26
 theme_override_font_sizes/italics_font_size = 12
 bbcode_enabled = true
 text = "
-[center][/center]"
+[center]Kości kości kości 
+Kości kości kości 
+Kości kości kości 
+Kości kości kości 
+[/center]"
 scroll_active = false
 shortcut_keys_enabled = false

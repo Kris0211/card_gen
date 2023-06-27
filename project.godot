@@ -22,8 +22,8 @@ CUM="*res://CommonUseModules.gd"
 
 [display]
 
-window/size/viewport_width=240
-window/size/viewport_height=336
+window/size/viewport_width=480
+window/size/viewport_height=720
 
 [input]
 
