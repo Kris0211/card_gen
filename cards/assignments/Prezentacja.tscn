@@ -4,11 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://bhj52ywvt7lso" path="res://images/tasks/prezentacja.png" id="2_mcywx"]
 
 [node name="StatedCard" instance=ExtResource("1_l3l5t")]
+first_stat_value = "8"
+second_stat_value = "10"
+third_stat_value = "6"
 card_icon = ExtResource("2_mcywx")
 card_name = "Prezentacja grupowa"
 card_flavour = "\"Grupowa\" tylko z nazwy"
-card_text = "Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color]."
+card_text = "Na koniec tury wybrany student traci [color=#FF0000]5 Psychy[/color]."
 center_text = true
+
+[node name="PanelText" parent="." index="1"]
+scale = Vector2(0.998619, 1)
 
 [node name="Image" parent="." index="5"]
 offset_left = 29.0
@@ -30,10 +36,13 @@ text = "[center][i]\"Grupowa\" tylko z nazwy[/i][/center]"
 
 [node name="CardText" parent="." index="9"]
 text = "
-[center]Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color].[/center]"
+[center]Na koniec tury wybrany student traci [color=#FF0000]5 Psychy[/color].[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="0"]
-text = "[center]5[/center]"
+text = "[center]8[/center]"
+
+[node name="Value" parent="Stats/Stat2" index="0"]
+text = "[center]10[/center]"
 
 [node name="Value" parent="Stats/Stat3" index="0"]
-text = "[center]8[/center]"
+text = "[center]6[/center]"

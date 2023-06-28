@@ -3,12 +3,12 @@
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_1iay7"]
 
 [node name="StatedCard" instance=ExtResource("1_1iay7")]
-first_stat_value = "10"
-second_stat_value = "8"
-third_stat_value = "6"
+first_stat_value = "5"
+second_stat_value = "2"
+third_stat_value = "8"
 card_name = "Wyznaczanie wyznacznika"
 card_flavour = "ona jest 10 na 10 i dolnotrójkątna"
-card_text = "Na koniec tury wybrany student traci [color=#FF0000]5 Psychy[/color]."
+card_text = "Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color]."
 center_text = true
 
 [node name="Name" parent="." index="6"]
@@ -24,7 +24,7 @@ text = "[center][i]ona jest 10 na 10 i dolnotrójkątna[/i][/center]"
 
 [node name="CardText" parent="." index="9"]
 text = "
-[center]Na koniec tury wybrany student traci [color=#FF0000]5 Psychy[/color].[/center]"
+[center]Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color].[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="0"]
 text = "[center]10[/center]"

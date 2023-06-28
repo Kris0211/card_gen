@@ -8,20 +8,20 @@
 [ext_resource type="FontFile" uid="uid://j1cr6vj06n8t" path="res://EdoPL.ttf" id="6_glmh8"]
 [ext_resource type="Texture2D" uid="uid://l8a7yea5p3kq" path="res://images/FancySeparator.bmp" id="7_q8sw5"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6yn"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_bottom = 4
-border_color = Color(1, 1, 1, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhw1g"]
 bg_color = Color(0, 0, 0, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
 border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6yn"]
+bg_color = Color(0.447059, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vd33y"]
 
@@ -54,6 +54,14 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
+[node name="PanelText" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 436.0
+offset_right = 369.0
+offset_bottom = 710.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mhw1g")
+
 [node name="PanelStats1" type="Panel" parent="."]
 layout_mode = 0
 offset_left = 378.0
@@ -77,14 +85,6 @@ offset_top = 474.0
 offset_right = 480.0
 offset_bottom = 674.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_lp6yn")
-
-[node name="PanelText" type="Panel" parent="."]
-layout_mode = 0
-offset_left = 10.0
-offset_top = 436.0
-offset_right = 370.0
-offset_bottom = 710.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_mhw1g")
 
 [node name="Image" type="TextureRect" parent="."]
 layout_mode = 0
@@ -175,7 +175,7 @@ theme_override_fonts/normal_font = ExtResource("6_glmh8")
 theme_override_fonts/italics_font = ExtResource("6_glmh8")
 theme_override_font_sizes/normal_font_size = 42
 bbcode_enabled = true
-text = "[center]1[/center]"
+text = "[center]12[/center]"
 scroll_active = false
 
 [node name="Panel" type="Panel" parent="Stats/Stat1"]
@@ -186,7 +186,6 @@ size_flags_vertical = 6
 theme_override_styles/panel = ExtResource("5_yly75")
 
 [node name="Icon" type="TextureRect" parent="Stats/Stat1/Panel"]
-self_modulate = Color(1, 0, 0, 1)
 layout_mode = 0
 offset_right = 80.0
 offset_bottom = 80.0
@@ -206,7 +205,7 @@ theme_override_fonts/normal_font = ExtResource("6_glmh8")
 theme_override_fonts/italics_font = ExtResource("6_glmh8")
 theme_override_font_sizes/normal_font_size = 42
 bbcode_enabled = true
-text = "[center]2[/center]"
+text = "[center]12[/center]"
 scroll_active = false
 
 [node name="Panel" type="Panel" parent="Stats/Stat2"]
@@ -217,7 +216,6 @@ size_flags_vertical = 6
 theme_override_styles/panel = ExtResource("5_yly75")
 
 [node name="Icon" type="TextureRect" parent="Stats/Stat2/Panel"]
-self_modulate = Color(1, 0, 0, 1)
 layout_mode = 0
 offset_right = 80.0
 offset_bottom = 80.0
@@ -237,7 +235,7 @@ theme_override_fonts/normal_font = ExtResource("6_glmh8")
 theme_override_fonts/italics_font = ExtResource("6_glmh8")
 theme_override_font_sizes/normal_font_size = 42
 bbcode_enabled = true
-text = "[center]3[/center]"
+text = "[center]12[/center]"
 scroll_active = false
 
 [node name="Panel" type="Panel" parent="Stats/Stat3"]
@@ -248,7 +246,6 @@ size_flags_vertical = 6
 theme_override_styles/panel = ExtResource("5_yly75")
 
 [node name="Icon" type="TextureRect" parent="Stats/Stat3/Panel"]
-self_modulate = Color(1, 0, 0, 1)
 layout_mode = 0
 offset_right = 80.0
 offset_bottom = 80.0
