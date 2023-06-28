@@ -8,9 +8,9 @@ extends BasicCard
 @export var second_stat_value: String
 @export var third_stat_value: String
 
-@onready var first_icon := $Stats/Stat1/Icon
-@onready var second_icon := $Stats/Stat2/Icon
-@onready var third_icon := $Stats/Stat3/Icon
+@onready var first_icon := $Stats/Stat1/Panel/Icon
+@onready var second_icon := $Stats/Stat2/Panel/Icon
+@onready var third_icon := $Stats/Stat3/Panel/Icon
 @onready var first_value := $Stats/Stat1/Value
 @onready var second_value := $Stats/Stat2/Value
 @onready var third_value := $Stats/Stat3/Value

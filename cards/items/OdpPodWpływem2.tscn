@@ -9,6 +9,9 @@ card_flavour = "Dajcie mi obejrzeć ten filmik!!!"
 card_text = "Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale odejmujesz 3 punkty [color=#FF0000]Sprytu[/color] od wymagań."
 amount = 8
 
+[node name="ColorBackground" parent="." index="0"]
+offset_right = 0.0
+
 [node name="Name" parent="." index="3"]
 theme_override_font_sizes/normal_font_size = 39
 text = "[center]tutorial pełen reklam[/center]"

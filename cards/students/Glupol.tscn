@@ -3,15 +3,19 @@
 [ext_resource type="PackedScene" uid="uid://br5tyuysp5q4g" path="res://logic/StudentCard.tscn" id="1_pfp8r"]
 
 [node name="StudentCard" instance=ExtResource("1_pfp8r")]
-scale = Vector2(0.998742, 1)
+scale = Vector2(0.998742, 1.01446)
 start_psycha_value = "10"
 student_color = Color(0.0196078, 0.0588235, 0.823529, 1)
+card_icon = null
 card_name = "Głupol"
 card_flavour = "Jak to punkty na minusie?!"
 card_text = "Może odłożyć kość z pustą ścianką jako parę do wyrzuconego symbolu"
 
 [node name="PanelText" parent="." index="1"]
 self_modulate = Color(0.0196078, 0.0588235, 0.823529, 1)
+
+[node name="Image" parent="." index="2"]
+texture = null
 
 [node name="PanelPsycha" parent="." index="3"]
 self_modulate = Color(0.0196078, 0.0588235, 0.823529, 1)

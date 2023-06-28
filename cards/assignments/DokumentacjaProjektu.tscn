@@ -1,19 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://cifd2lu5a76py"]
+[gd_scene load_steps=6 format=3 uid="uid://cifd2lu5a76py"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_p0b0k"]
 [ext_resource type="Texture2D" uid="uid://b2qvot4xxteyp" path="res://images/tasks/sprawozdanie3.png" id="2_njk7u"]
+[ext_resource type="Texture2D" uid="uid://dmgk0fvr82p6k" path="res://images/icons/wiedza.png" id="2_oevxv"]
+[ext_resource type="Texture2D" uid="uid://dmbcadctamysu" path="res://images/icons/odwaga.png" id="3_wlalm"]
+[ext_resource type="Texture2D" uid="uid://bq47my3qfxn2m" path="res://images/icons/spryt.png" id="4_fgg7j"]
 
 [node name="StatedCard" instance=ExtResource("1_p0b0k")]
-first_stat_icon = null
-second_stat_icon = null
-third_stat_icon = null
+first_stat_icon = ExtResource("2_oevxv")
+second_stat_icon = ExtResource("3_wlalm")
+third_stat_icon = ExtResource("4_fgg7j")
 second_stat_value = "2"
 third_stat_value = "4"
 card_icon = ExtResource("2_njk7u")
 card_name = "Dokumentacja Projektu"
 card_flavour = "ktoś to w ogóle czyta?"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color]."
-amount = 0
 
 [node name="Image" parent="." index="5"]
 offset_left = -6.0
@@ -34,8 +36,17 @@ text = "[center][i]ktoś to w ogóle czyta?[/i][/center]"
 [node name="CardText" parent="." index="9"]
 text = "[center]Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color].[/center]"
 
+[node name="Icon" parent="Stats/Stat1/Panel" index="0"]
+texture = ExtResource("2_oevxv")
+
 [node name="Value" parent="Stats/Stat2" index="0"]
 text = "[center]2[/center]"
 
+[node name="Icon" parent="Stats/Stat2/Panel" index="0"]
+texture = ExtResource("3_wlalm")
+
 [node name="Value" parent="Stats/Stat3" index="0"]
 text = "[center]4[/center]"
+
+[node name="Icon" parent="Stats/Stat3/Panel" index="0"]
+texture = ExtResource("4_fgg7j")

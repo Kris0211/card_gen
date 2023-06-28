@@ -42,13 +42,13 @@ text = "Export events"
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-text = "Export people"
+text = "Export profesors"
 
 [node name="ExportStudents" type="Button" parent="VBC"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-text = "Export people"
+text = "Export students"
 
 [node name="Label" type="Label" parent="VBC"]
 layout_mode = 2

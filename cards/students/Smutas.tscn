@@ -5,12 +5,12 @@
 
 [node name="StudentCard" instance=ExtResource("1_noofl")]
 scale = Vector2(0.998742, 1)
-start_psycha_value = "10"
 student_color = Color(0.698039, 0.364706, 0.819608, 1)
 card_icon = ExtResource("2_j4tk0")
 card_name = "Smutas"
 card_flavour = "No i po co to wszystko?"
-card_text = "może dokładać kość z psychą do pozostałych symboli."
+card_text = "Odkładając symbol psychy nie tracisz psychy w tej turze. Wszystkie efekty odnawiające psychę odnawiają o jeden punkt psychy mniej (zawsze przynajmniej jeden)"
+center_text = false
 
 [node name="PanelText" parent="." index="1"]
 self_modulate = Color(0.698039, 0.364706, 0.819608, 1)
@@ -24,9 +24,6 @@ texture = ExtResource("2_j4tk0")
 [node name="PanelPsycha" parent="." index="3"]
 self_modulate = Color(0.698039, 0.364706, 0.819608, 1)
 
-[node name="Psycha" parent="PanelPsycha" index="1"]
-text = "[center]10[/center]"
-
 [node name="Name" parent="." index="4"]
 text = "[center]Smutas[/center]"
 
@@ -34,5 +31,9 @@ text = "[center]Smutas[/center]"
 text = "[center][i]No i po co to wszystko?[/i][/center]"
 
 [node name="CardText" parent="." index="7"]
-text = "
-[center]może dokładać kość z psychą do pozostałych symboli.[/center]"
+offset_left = 21.0265
+offset_top = 535.0
+offset_right = 459.026
+offset_bottom = 725.0
+theme_override_font_sizes/normal_font_size = 25
+text = "[center]Odkładając symbol psychy nie tracisz psychy w tej turze. Wszystkie efekty odnawiające psychę odnawiają o jeden punkt psychy mniej (zawsze przynajmniej jeden)[/center]"
