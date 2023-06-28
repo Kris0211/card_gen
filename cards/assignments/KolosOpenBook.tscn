@@ -1,15 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://qa2bkyfau3tj"]
+[gd_scene load_steps=3 format=3 uid="uid://qa2bkyfau3tj"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_eheyv"]
+[ext_resource type="Texture2D" uid="uid://c4nmpchyoux8d" path="res://images/tasks/kolos_z_matmy.png" id="2_5q0n8"]
 
 [node name="StatedCard" instance=ExtResource("1_eheyv")]
 first_stat_value = "0"
 second_stat_value = "9"
 third_stat_value = "14"
+card_icon = ExtResource("2_5q0n8")
 card_name = "Kolos \"open book\""
 card_flavour = "Wiedza jest, czasu nie ma."
 card_text = "Gdy wyrzucisz [color=#FF0000]Wiedzę[/color], przerzuć tę kość. Wiedza zawsze wynosi 0. Na koniec tury każdy student traci 
 [color=#FF0000]0 Psychy + 1[/color] za każdą turę."
+
+[node name="Image" parent="." index="5"]
+texture = ExtResource("2_5q0n8")
 
 [node name="Name" parent="." index="6"]
 offset_left = 1.0

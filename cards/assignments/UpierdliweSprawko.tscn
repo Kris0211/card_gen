@@ -1,15 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://cilout47yjq72"]
+[gd_scene load_steps=3 format=3 uid="uid://cilout47yjq72"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_yc0ne"]
+[ext_resource type="Texture2D" uid="uid://b2qvot4xxteyp" path="res://images/tasks/sprawozdanie3.png" id="2_3ejdj"]
 
 [node name="StatedCard" instance=ExtResource("1_yc0ne")]
 first_stat_value = "2"
 second_stat_value = "5"
 third_stat_value = "8"
+card_icon = ExtResource("2_3ejdj")
 card_name = "Upierdliwe sprawko"
 card_flavour = "Chyba zaraz mnie coś strzeli!"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color]."
 center_text = true
+
+[node name="Image" parent="." index="5"]
+offset_left = -6.0
+offset_top = 13.0
+offset_right = 374.0
+offset_bottom = 440.0
+texture = ExtResource("2_3ejdj")
 
 [node name="Name" parent="." index="6"]
 offset_left = 3.0

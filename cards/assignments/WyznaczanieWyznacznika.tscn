@@ -1,15 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhj4rnh8vyyn6"]
+[gd_scene load_steps=3 format=3 uid="uid://dhj4rnh8vyyn6"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_1iay7"]
+[ext_resource type="Texture2D" uid="uid://c4nmpchyoux8d" path="res://images/tasks/kolos_z_matmy.png" id="2_xgwaj"]
 
 [node name="StatedCard" instance=ExtResource("1_1iay7")]
 first_stat_value = "5"
 second_stat_value = "2"
 third_stat_value = "8"
+card_icon = ExtResource("2_xgwaj")
 card_name = "Wyznaczanie wyznacznika"
 card_flavour = "ona jest 10 na 10 i dolnotrójkątna"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color]."
 center_text = true
+
+[node name="Image" parent="." index="5"]
+offset_left = 15.0
+offset_top = 20.0
+offset_right = 357.0
+offset_bottom = 414.0
+texture = ExtResource("2_xgwaj")
 
 [node name="Name" parent="." index="6"]
 offset_left = -2.0

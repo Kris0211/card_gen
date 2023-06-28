@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cifd2lu5a76py"]
+[gd_scene load_steps=3 format=3 uid="uid://cifd2lu5a76py"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_p0b0k"]
+[ext_resource type="Texture2D" uid="uid://b2qvot4xxteyp" path="res://images/tasks/sprawozdanie3.png" id="2_njk7u"]
 
 [node name="StatedCard" instance=ExtResource("1_p0b0k")]
 first_stat_icon = null
@@ -8,10 +9,18 @@ second_stat_icon = null
 third_stat_icon = null
 second_stat_value = "2"
 third_stat_value = "4"
+card_icon = ExtResource("2_njk7u")
 card_name = "Dokumentacja Projektu"
 card_flavour = "ktoś to w ogóle czyta?"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color]."
 amount = 0
+
+[node name="Image" parent="." index="5"]
+offset_left = -6.0
+offset_top = 27.0
+offset_right = 374.0
+offset_bottom = 454.0
+texture = ExtResource("2_njk7u")
 
 [node name="Name" parent="." index="6"]
 offset_top = 450.0
