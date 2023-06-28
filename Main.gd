@@ -31,6 +31,11 @@ func _on_export_people_pressed():
 	_batch_export("/people/", true)
 
 
+func _on_export_students_pressed():
+	_check_export_dir("/students/")
+	_batch_export("/students/", true)
+
+
 func _check_export_dir(dir: String):
 	if not DirAccess.open("res://exported/"):
 		DirAccess.make_dir_absolute("res://exported/")

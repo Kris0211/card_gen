@@ -44,6 +44,12 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Export people"
 
+[node name="ExportStudents" type="Button" parent="VBC"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Export people"
+
 [node name="Label" type="Label" parent="VBC"]
 layout_mode = 2
 horizontal_alignment = 1
@@ -53,3 +59,4 @@ horizontal_alignment = 1
 [connection signal="pressed" from="VBC/ExportAssignments" to="." method="_on_export_assignments_pressed"]
 [connection signal="pressed" from="VBC/ExportEvents" to="." method="_on_export_events_pressed"]
 [connection signal="pressed" from="VBC/ExportPeople" to="." method="_on_export_people_pressed"]
+[connection signal="pressed" from="VBC/ExportStudents" to="." method="_on_export_students_pressed"]

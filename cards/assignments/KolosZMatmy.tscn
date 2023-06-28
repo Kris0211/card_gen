@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dxe3c7da2xck0"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_rp6hv"]
-[ext_resource type="Texture2D" uid="uid://c4nmpchyoux8d" path="res://images/tasks/kolos_z_matmy.png" id="2_uikwr"]
+[ext_resource type="Texture2D" uid="uid://bolvse0oqt75k" path="res://images/tasks/kolos_z_matmy.png" id="2_uikwr"]
 
 [node name="StatedCard" instance=ExtResource("1_rp6hv")]
 first_stat_value = "9"

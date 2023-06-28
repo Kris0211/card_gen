@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b7lk7dswqf7f6"]
 
-[ext_resource type="PackedScene" path="res://logic/BasicDarkCard.tscn" id="1_ih7pp"]
-[ext_resource type="Texture2D" uid="uid://p3r4ojyipsou" path="res://images/events/serwery.png" id="2_tp7oq"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_ih7pp"]
+[ext_resource type="Texture2D" uid="uid://b1r23hteclocd" path="res://images/events/serwery.png" id="2_tp7oq"]
 
 [node name="BasicCard" instance=ExtResource("1_ih7pp")]
 card_icon = ExtResource("2_tp7oq")
