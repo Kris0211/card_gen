@@ -1,12 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsfdab6mgd3r4"]
+[gd_scene load_steps=3 format=3 uid="uid://bsfdab6mgd3r4"]
 
 [ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_1qcvn"]
+[ext_resource type="Texture2D" uid="uid://cmy4t5ura7r8y" path="res://images/items/piwo.png" id="2_4gi80"]
 
 [node name="BasicCard" instance=ExtResource("1_1qcvn")]
+card_icon = ExtResource("2_4gi80")
 card_name = "Piwo"
 card_flavour = "Studentów paliwo"
 card_text = "Odnawia wybranemu studentowi 2 [color=#FF0000]Psychy[/color]."
 amount = 15
+
+[node name="Image" parent="." index="2"]
+offset_left = 40.6561
+offset_top = 18.0733
+offset_right = 450.656
+offset_bottom = 413.073
+texture = ExtResource("2_4gi80")
 
 [node name="Name" parent="." index="3"]
 text = "[center]Piwo[/center]"

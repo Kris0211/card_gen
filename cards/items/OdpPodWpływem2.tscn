@@ -3,15 +3,19 @@
 [ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_g8eev"]
 
 [node name="BasicCard" instance=ExtResource("1_g8eev")]
-card_name = "???"
+scale = Vector2(1.0005, 0.995944)
+card_name = "tutorial pełen reklam"
+card_flavour = "Dajcie mi obejrzeć ten filmik!!!"
 card_text = "Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale odejmujesz 3 punkty [color=#FF0000]Sprytu[/color] od wymagań."
-center_text = true
 amount = 8
 
-[node name="Name" parent="." index="1"]
-theme_override_font_sizes/normal_font_size = 16
-text = "[center]???[/center]"
+[node name="Name" parent="." index="3"]
+theme_override_font_sizes/normal_font_size = 39
+text = "[center]tutorial pełen reklam[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Dajcie mi obejrzeć ten filmik!!![/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale odejmujesz 3 punkty [color=#FF0000]Sprytu[/color] od wymagań.[/center]"

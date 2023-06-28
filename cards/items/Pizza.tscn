@@ -1,12 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://ciwvv05ctu1fw"]
+[gd_scene load_steps=3 format=3 uid="uid://ciwvv05ctu1fw"]
 
 [ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_0jhcw"]
+[ext_resource type="Texture2D" uid="uid://d4jdcmrjj1313" path="res://images/items/pizza.png" id="2_26exj"]
 
 [node name="BasicCard" instance=ExtResource("1_0jhcw")]
+card_icon = ExtResource("2_26exj")
 card_name = "Pizza"
 card_flavour = "Smakuje lepiej z przyjaciółmi"
 card_text = "Odnawia 3 [color=#FF0000]Psychy[/color] wszystkim studentom."
 amount = 10
+
+[node name="Image" parent="." index="2"]
+texture = ExtResource("2_26exj")
 
 [node name="Name" parent="." index="3"]
 text = "[center]Pizza[/center]"
