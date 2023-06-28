@@ -1,11 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://xjlm5pfajvyj"]
+[gd_scene load_steps=3 format=3 uid="uid://xjlm5pfajvyj"]
 
-[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_x2qh4"]
+[ext_resource type="PackedScene" path="res://logic/BasicDarkCard.tscn" id="1_x2qh4"]
+[ext_resource type="Texture2D" uid="uid://y1eex5383ukk" path="res://images/people/wykadowca.png" id="2_0ilyx"]
 
 [node name="BasicCard" instance=ExtResource("1_x2qh4")]
+card_icon = ExtResource("2_0ilyx")
 card_name = "Siwy profesor"
 card_flavour = "Większość życia spędził na uczelni"
 card_text = "Każde zadanie po odkryciu dostaje +3 do wymaganej wiedzy, ale zarazem -2 do odwagi."
+
+[node name="Image" parent="." index="2"]
+offset_left = 0.0
+offset_right = 459.0
+offset_bottom = 426.0
+texture = ExtResource("2_0ilyx")
 
 [node name="Name" parent="." index="3"]
 text = "[center]Siwy profesor[/center]"
