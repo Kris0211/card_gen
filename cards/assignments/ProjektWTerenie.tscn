@@ -1,15 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://ckpy48f78mv0e"]
+[gd_scene load_steps=3 format=3 uid="uid://ckpy48f78mv0e"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_t6k4e"]
+[ext_resource type="Texture2D" uid="uid://cfyxir62hiexe" path="res://images/tasks/teren.png" id="2_lveo6"]
 
 [node name="StatedCard" instance=ExtResource("1_t6k4e")]
 first_stat_value = "3"
 second_stat_value = "10"
 third_stat_value = "5"
+card_icon = ExtResource("2_lveo6")
 card_name = "Projekt w terenie"
 card_flavour = "Super, ale czemu tak daleko?"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color]."
 center_text = true
+
+[node name="Image" parent="." index="5"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 368.0
+offset_bottom = 412.0
+texture = ExtResource("2_lveo6")
 
 [node name="Name" parent="." index="6"]
 offset_left = -4.0

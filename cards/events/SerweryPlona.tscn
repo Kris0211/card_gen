@@ -1,11 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://b7lk7dswqf7f6"]
+[gd_scene load_steps=3 format=3 uid="uid://b7lk7dswqf7f6"]
 
-[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_ih7pp"]
+[ext_resource type="PackedScene" path="res://logic/BasicDarkCard.tscn" id="1_ih7pp"]
+[ext_resource type="Texture2D" uid="uid://p3r4ojyipsou" path="res://images/events/serwery.png" id="2_tp7oq"]
 
 [node name="BasicCard" instance=ExtResource("1_ih7pp")]
+card_icon = ExtResource("2_tp7oq")
 card_name = "SERWERY PŁONĄ!"
 card_flavour = "(Nie pierwszy i nie ostatni raz)"
 card_text = "Wszystkie wymagania obecnego zadania zostają przerzucone."
+
+[node name="Image" parent="." index="2"]
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 460.0
+offset_bottom = 418.0
+texture = ExtResource("2_tp7oq")
 
 [node name="Name" parent="." index="3"]
 text = "[center]SERWERY PŁONĄ![/center]"

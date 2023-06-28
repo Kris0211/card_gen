@@ -16,8 +16,9 @@ card_text = ""
 self_modulate = Color(0.698039, 0.364706, 0.819608, 1)
 
 [node name="Image" parent="." index="2"]
-offset_left = -16.0202
-offset_right = 442.98
+offset_left = -41.0
+offset_top = -32.0
+offset_right = 453.0
 texture = ExtResource("2_j4tk0")
 
 [node name="PanelPsycha" parent="." index="3"]

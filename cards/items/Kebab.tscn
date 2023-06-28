@@ -1,13 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://buyluejy1erip"]
+[gd_scene load_steps=3 format=3 uid="uid://buyluejy1erip"]
 
 [ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_ho6wt"]
+[ext_resource type="Texture2D" uid="uid://cmnbsf2da4hui" path="res://images/items/kebab.png" id="2_7w7nr"]
 
 [node name="BasicCard" instance=ExtResource("1_ho6wt")]
+card_icon = ExtResource("2_7w7nr")
 card_name = "Kebab"
 card_flavour = "Dobry kebab piecze dwa razy"
 card_text = "Jednorazowo uniknij utraty [color=#FF0000]Psychy[/color].
 "
 amount = 5
+
+[node name="Image" parent="." index="2"]
+offset_left = 7.93289
+offset_top = -24.0977
+offset_right = 466.933
+offset_bottom = 402.902
+texture = ExtResource("2_7w7nr")
 
 [node name="Name" parent="." index="3"]
 text = "[center]Kebab[/center]"

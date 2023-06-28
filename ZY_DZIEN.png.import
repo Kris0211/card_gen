@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gweqv2qywy5o"
-path="res://.godot/imported/zdalne.png-ce32f3f309f90dd575cafc9e2fa203e8.ctex"
+uid="uid://k2plbyerc6lh"
+path="res://.godot/imported/ZY_DZIEN.png-621454c261754ad90d90c9da83de1a3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/events/zdalne.png"
-dest_files=["res://.godot/imported/zdalne.png-ce32f3f309f90dd575cafc9e2fa203e8.ctex"]
+source_file="res://ZY_DZIEN.png"
+dest_files=["res://.godot/imported/ZY_DZIEN.png-621454c261754ad90d90c9da83de1a3f.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gweqv2qywy5o"
-path="res://.godot/imported/zdalne.png-ce32f3f309f90dd575cafc9e2fa203e8.ctex"
+uid="uid://cfyxir62hiexe"
+path="res://.godot/imported/teren.png-91eb6754c645b977eccfa1bec3edc540.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/events/zdalne.png"
-dest_files=["res://.godot/imported/zdalne.png-ce32f3f309f90dd575cafc9e2fa203e8.ctex"]
+source_file="res://images/tasks/teren.png"
+dest_files=["res://.godot/imported/teren.png-91eb6754c645b977eccfa1bec3edc540.ctex"]
 
 [params]
 
