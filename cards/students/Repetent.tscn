@@ -5,7 +5,7 @@
 
 [node name="StudentCard" instance=ExtResource("1_rfs7k")]
 scale = Vector2(0.998742, 1)
-start_psycha_value = "10"
+start_psycha_value = "11"
 student_color = Color(0.129412, 0.498039, 0.0980392, 1)
 card_icon = ExtResource("2_oj8w2")
 card_name = "Repetent"
@@ -25,7 +25,7 @@ texture = ExtResource("2_oj8w2")
 self_modulate = Color(0.129412, 0.498039, 0.0980392, 1)
 
 [node name="Psycha" parent="PanelPsycha" index="1"]
-text = "[center]10[/center]"
+text = "[center]11[/center]"
 
 [node name="Name" parent="." index="4"]
 text = "[center]Repetent[/center]"

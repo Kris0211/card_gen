@@ -10,7 +10,7 @@ student_color = Color(0.698039, 0.364706, 0.819608, 1)
 card_icon = ExtResource("2_j4tk0")
 card_name = "Smutas"
 card_flavour = "No i po co to wszystko?"
-card_text = ""
+card_text = "może dokładać kość z psychą do pozostałych symboli."
 
 [node name="PanelText" parent="." index="1"]
 self_modulate = Color(0.698039, 0.364706, 0.819608, 1)
@@ -35,4 +35,4 @@ text = "[center][i]No i po co to wszystko?[/i][/center]"
 
 [node name="CardText" parent="." index="7"]
 text = "
-[center][/center]"
+[center]może dokładać kość z psychą do pozostałych symboli.[/center]"
