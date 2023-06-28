@@ -7,6 +7,7 @@ first_stat_value = "10"
 second_stat_value = "8"
 third_stat_value = "6"
 card_name = "Wyznaczanie wyznacznika"
+card_flavour = "ona jest 10 na 10 i dolnotrójkątna"
 card_text = "Na koniec tury wybrany student traci [color=#FF0000]5 Psychy[/color]."
 
 [node name="Name" parent="." index="4"]
@@ -16,6 +17,9 @@ offset_right = 378.0
 offset_bottom = 508.0
 theme_override_font_sizes/normal_font_size = 28
 text = "[center]Wyznaczanie wyznacznika[/center]"
+
+[node name="Flavour" parent="." index="5"]
+text = "[center][i]ona jest 10 na 10 i dolnotrójkątna[/i][/center]"
 
 [node name="CardText" parent="." index="7"]
 text = "[center]Na koniec tury wybrany student traci [color=#FF0000]5 Psychy[/color].[/center]"

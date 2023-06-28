@@ -16,7 +16,7 @@ border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color(0, 0, 0, 1)
+border_color = Color(0.792157, 0.792157, 0.792157, 1)
 corner_detail = 1
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grhdc"]
@@ -64,7 +64,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_4d5yi")
 layout_mode = 0
 offset_left = 10.0
 offset_right = 469.0
-offset_bottom = 427.0
+offset_bottom = 426.0
 texture = ExtResource("2_dqcpk")
 expand_mode = 1
 stretch_mode = 6
