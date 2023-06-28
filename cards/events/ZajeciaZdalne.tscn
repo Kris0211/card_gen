@@ -1,12 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvqdsqyx2q304"]
+[gd_scene load_steps=3 format=3 uid="uid://ddusdaoncvqtd"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_8nyi4"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_p35m8"]
+[ext_resource type="Texture2D" uid="uid://c0yx58n5072wf" path="res://images/events/zdalne.png" id="2_0jigj"]
 
-[node name="BasicCard" instance=ExtResource("1_8nyi4")]
+[node name="BasicCard" instance=ExtResource("1_p35m8")]
+card_icon = ExtResource("2_0jigj")
 card_name = "Zajęcia zdalne"
 card_flavour = "Taka okazja często się nie zdarza!"
 card_text = "Po zakończeniu rzutów
 każdy student może zamienić się 1 odłożoną kością z innym."
+
+[node name="Image" parent="." index="2"]
+texture = ExtResource("2_0jigj")
 
 [node name="Name" parent="." index="3"]
 text = "[center]Zajęcia zdalne[/center]"

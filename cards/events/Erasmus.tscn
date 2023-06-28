@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsiq26q4egcjw"]
+[gd_scene load_steps=2 format=3 uid="uid://dlva0mujp6x4h"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_3jrxe"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_k3n0i"]
 
-[node name="BasicCard" instance=ExtResource("1_3jrxe")]
+[node name="BasicCard" instance=ExtResource("1_k3n0i")]
 card_name = "ERASMUS"
 card_flavour = "Wymiana studentów, wymiana doświadczeń"
 card_text = "Każdy gracz może wymienić swojego studenta na innego."

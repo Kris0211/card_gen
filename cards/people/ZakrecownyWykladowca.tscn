@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://d1ac33npur83u"]
+[gd_scene load_steps=2 format=3 uid="uid://d21pkm1oo35wi"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_7yh2t"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_khleo"]
 
-[node name="BasicCard" instance=ExtResource("1_7yh2t")]
+[node name="BasicCard" instance=ExtResource("1_khleo")]
 card_name = "Zakręcony Wykładowca"
 card_flavour = "Niczego nie można być przy nim pewnym"
 card_text = "Każdemu zadaniu towarzyszą dwa wydarzenia zamiast jednego."

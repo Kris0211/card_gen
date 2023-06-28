@@ -1,12 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://sfqlhb8wvx76"]
+[gd_scene load_steps=3 format=3 uid="uid://haqrhvyl8705"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_gv6op"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_k6mo6"]
+[ext_resource type="Texture2D" uid="uid://se0apxkvclg7" path="res://images/events/ZY_DZIEN.png" id="2_o5u0q"]
 
-[node name="BasicCard" instance=ExtResource("1_gv6op")]
+[node name="BasicCard" instance=ExtResource("1_k6mo6")]
+card_icon = ExtResource("2_o5u0q")
 card_name = "Zły dzień"
 card_flavour = "Lepiej nie drażnić wykładowcy."
 card_text = "Każde wymaganie zadania 
 wzrasta o 2."
+
+[node name="Image" parent="." index="2"]
+texture = ExtResource("2_o5u0q")
 
 [node name="Name" parent="." index="3"]
 text = "[center]Zły dzień[/center]"

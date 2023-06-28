@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cik3gnvltjwq7"]
+[gd_scene load_steps=2 format=3 uid="uid://bwpohi68q3ohr"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_imoxu"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_5wbtt"]
 
-[node name="BasicCard" instance=ExtResource("1_imoxu")]
+[node name="BasicCard" instance=ExtResource("1_5wbtt")]
 card_name = "Dzien Wydziału"
 card_flavour = "Wydarzenie na skalę uczelnianą"
 card_text = "Pasywna umiejętność wykładowcy nie działa do końca zadania."

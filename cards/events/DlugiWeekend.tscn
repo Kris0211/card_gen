@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://33elv0cd5cty"]
+[gd_scene load_steps=2 format=3 uid="uid://eyai6mhf5dmc"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_0ne0d"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_l1b6q"]
 
-[node name="BasicCard" instance=ExtResource("1_0ne0d")]
+[node name="BasicCard" instance=ExtResource("1_l1b6q")]
 card_name = "Długi weekend"
 card_flavour = "Boże ciało? Prędzej  \"Boże nareszcie\""
 card_text = "Każdy student jednorazowo leczy się o [color=#FF0000]5 Psychy[/color], ale pomijany jest następny tydzień"

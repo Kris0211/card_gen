@@ -34,6 +34,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.999255, 1)
 script = ExtResource("1_knpfu")
 start_psycha_value = "12"
 student_color = Color(0, 0.6, 0.843137, 1)

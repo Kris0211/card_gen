@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0r62dumip8aa"]
+[gd_scene load_steps=2 format=3 uid="uid://dumx5et1uuv2s"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_8hvsu"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_nqcok"]
 
-[node name="BasicCard" instance=ExtResource("1_8hvsu")]
+[node name="BasicCard" instance=ExtResource("1_nqcok")]
 card_name = "Doktorant"
 card_flavour = "Stara się jak tylko może."
 card_text = "Każdy student po zakończeniu rzutów musi przerzucić jedną ze swoich odłożonych kości."

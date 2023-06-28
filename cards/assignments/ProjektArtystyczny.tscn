@@ -1,14 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://bm7xwnn0pki4m"]
+[gd_scene load_steps=3 format=3 uid="uid://bm7xwnn0pki4m"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_5s026"]
+[ext_resource type="Texture2D" uid="uid://dofgv5hrbsb3n" path="res://images/tasks/projekt_artystyczny.png" id="2_hnuxi"]
 
 [node name="StatedCard" instance=ExtResource("1_5s026")]
+card_icon = ExtResource("2_hnuxi")
 card_name = "Projekt artystyczny"
 card_flavour = "Zmora umysłów ścisłych"
 card_text = "Jeśli student nie wyrzucił sprytu, to traci [color=#FF0000]4 Psychy[/color] na koniec tury."
 center_text = true
 
-[node name="Name" parent="." index="4"]
+[node name="Image" parent="." index="5"]
+offset_left = 21.0
+offset_top = 29.0
+offset_right = 332.0
+offset_bottom = 410.0
+texture = ExtResource("2_hnuxi")
+
+[node name="Name" parent="." index="6"]
 offset_left = 5.0
 offset_top = 447.0
 offset_right = 385.0
@@ -16,10 +25,10 @@ offset_bottom = 503.0
 theme_override_font_sizes/normal_font_size = 34
 text = "[center]Projekt artystyczny[/center]"
 
-[node name="Flavour" parent="." index="5"]
+[node name="Flavour" parent="." index="7"]
 text = "[center][i]Zmora umysłów ścisłych[/i][/center]"
 
-[node name="CardText" parent="." index="7"]
+[node name="CardText" parent="." index="9"]
 text = "
 [center]Jeśli student nie wyrzucił sprytu, to traci [color=#FF0000]4 Psychy[/color] na koniec tury.[/center]"
 

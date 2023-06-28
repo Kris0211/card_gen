@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b260820c3phk4"]
+[gd_scene load_steps=2 format=3 uid="uid://c8xvvg54aaerh"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_h3pmx"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_j2sik"]
 
-[node name="BasicCard" instance=ExtResource("1_h3pmx")]
+[node name="BasicCard" instance=ExtResource("1_j2sik")]
 card_name = "Hospitacja"
 card_flavour = "okazja do ponarzekania. Ale czy na pewno?"
 card_text = "Wykładowca zostaje zamieniony na losowego innego wykładowcę."

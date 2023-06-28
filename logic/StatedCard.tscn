@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://d4mlv7l1yrpco"]
+[gd_scene load_steps=11 format=3 uid="uid://d4mlv7l1yrpco"]
 
 [ext_resource type="Script" path="res://logic/StatedCard.gd" id="1_8off8"]
 [ext_resource type="Texture2D" uid="uid://cdg4mwrpolh6q" path="res://graphics/KSIAZKA.png" id="2_3fn57"]
@@ -8,20 +8,22 @@
 [ext_resource type="FontFile" uid="uid://j1cr6vj06n8t" path="res://EdoPL.ttf" id="6_glmh8"]
 [ext_resource type="Texture2D" uid="uid://l8a7yea5p3kq" path="res://images/FancySeparator.bmp" id="7_q8sw5"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6yn"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_bottom = 4
-border_color = Color(1, 1, 1, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhw1g"]
 bg_color = Color(0, 0, 0, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
 border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lp6yn"]
+bg_color = Color(0.447059, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 0)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vd33y"]
 
 [node name="StatedCard" type="Control"]
 layout_mode = 3
@@ -52,21 +54,37 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
-[node name="PanelStats" type="Panel" parent="."]
-layout_mode = 0
-offset_left = 380.0
-offset_top = 10.0
-offset_right = 480.0
-offset_bottom = 710.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_lp6yn")
-
 [node name="PanelText" type="Panel" parent="."]
 layout_mode = 0
 offset_left = 10.0
 offset_top = 436.0
-offset_right = 370.0
+offset_right = 369.0
 offset_bottom = 710.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_mhw1g")
+
+[node name="PanelStats1" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 32.0
+offset_right = 480.0
+offset_bottom = 232.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lp6yn")
+
+[node name="PanelStats2" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 253.0
+offset_right = 480.0
+offset_bottom = 453.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lp6yn")
+
+[node name="PanelStats3" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 378.0
+offset_top = 474.0
+offset_right = 480.0
+offset_bottom = 674.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lp6yn")
 
 [node name="Image" type="TextureRect" parent="."]
 layout_mode = 0
@@ -133,12 +151,16 @@ shortcut_keys_enabled = false
 
 [node name="Stats" type="VBoxContainer" parent="."]
 layout_mode = 1
-offset_left = 390.0
-offset_top = 50.0
-offset_right = 470.0
-offset_bottom = 670.0
-theme_override_constants/separation = 0
+offset_left = 391.0
+offset_top = -1.0
+offset_right = 471.0
+offset_bottom = 718.0
+theme_override_constants/separation = 50
 alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="Stats"]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_vd33y")
 
 [node name="Stat1" type="VBoxContainer" parent="Stats"]
 layout_mode = 2
@@ -153,7 +175,7 @@ theme_override_fonts/normal_font = ExtResource("6_glmh8")
 theme_override_fonts/italics_font = ExtResource("6_glmh8")
 theme_override_font_sizes/normal_font_size = 42
 bbcode_enabled = true
-text = "[center]1[/center]"
+text = "[center]12[/center]"
 scroll_active = false
 
 [node name="Panel" type="Panel" parent="Stats/Stat1"]
@@ -183,7 +205,7 @@ theme_override_fonts/normal_font = ExtResource("6_glmh8")
 theme_override_fonts/italics_font = ExtResource("6_glmh8")
 theme_override_font_sizes/normal_font_size = 42
 bbcode_enabled = true
-text = "[center]2[/center]"
+text = "[center]12[/center]"
 scroll_active = false
 
 [node name="Panel" type="Panel" parent="Stats/Stat2"]
@@ -213,7 +235,7 @@ theme_override_fonts/normal_font = ExtResource("6_glmh8")
 theme_override_fonts/italics_font = ExtResource("6_glmh8")
 theme_override_font_sizes/normal_font_size = 42
 bbcode_enabled = true
-text = "[center]3[/center]"
+text = "[center]12[/center]"
 scroll_active = false
 
 [node name="Panel" type="Panel" parent="Stats/Stat3"]
@@ -229,3 +251,7 @@ offset_right = 80.0
 offset_bottom = 80.0
 texture = ExtResource("3_nd12q")
 expand_mode = 1
+
+[node name="VSeparator2" type="VSeparator" parent="Stats"]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxEmpty_vd33y")
