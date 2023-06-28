@@ -1,0 +1,120 @@
+[gd_scene load_steps=6 format=3 uid="uid://c8wugg86bkoaa"]
+
+[ext_resource type="Script" path="res://logic/BasicCard.gd" id="1_fsuog"]
+[ext_resource type="FontFile" uid="uid://j1cr6vj06n8t" path="res://EdoPL.ttf" id="2_2kngu"]
+[ext_resource type="Texture2D" uid="uid://l8a7yea5p3kq" path="res://images/FancySeparator.bmp" id="3_rnfqo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ub400"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ir5i8"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+
+[node name="BasicCard" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.00846, 0.995944)
+script = ExtResource("1_fsuog")
+card_name = "Nazwa"
+card_flavour = "Falvour"
+card_text = "Opis"
+
+[node name="ColorBackground" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -3.06419e-05
+offset_bottom = -1.00006
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ub400")
+
+[node name="PanelText" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 426.0
+offset_right = 460.0
+offset_bottom = 700.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ir5i8")
+
+[node name="Image" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 10.0
+offset_right = 469.0
+offset_bottom = 427.0
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Name" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = -0.991611
+offset_top = 440.788
+offset_right = 479.008
+offset_bottom = 493.788
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_2kngu")
+theme_override_fonts/italics_font = ExtResource("2_2kngu")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center]Nazwa[/center]"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Flavour" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = -0.991611
+offset_top = 497.788
+offset_right = 479.008
+offset_bottom = 521.788
+scale = Vector2(1.00818, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_2kngu")
+theme_override_fonts/italics_font = ExtResource("2_2kngu")
+theme_override_font_sizes/normal_font_size = 0
+theme_override_font_sizes/italics_font_size = 20
+bbcode_enabled = true
+text = "[center][i]Falvour[/i][/center]"
+scroll_active = false
+shortcut_keys_enabled = false
+
+[node name="Separator" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 25.0084
+offset_top = 525.788
+offset_right = 447.008
+offset_bottom = 559.788
+texture = ExtResource("3_rnfqo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CardText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 549.0
+offset_right = 445.0
+offset_bottom = 690.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("2_2kngu")
+theme_override_fonts/italics_font = ExtResource("2_2kngu")
+theme_override_font_sizes/normal_font_size = 26
+theme_override_font_sizes/italics_font_size = 12
+bbcode_enabled = true
+text = "
+[center]Opis[/center]"
+scroll_active = false
+shortcut_keys_enabled = false

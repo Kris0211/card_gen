@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://begjiwyynyaip"]
+[gd_scene load_steps=2 format=3 uid="uid://b7lk7dswqf7f6"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_lk8cx"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_ih7pp"]
 
-[node name="BasicCard" instance=ExtResource("1_lk8cx")]
+[node name="BasicCard" instance=ExtResource("1_ih7pp")]
 card_name = "SERWERY PŁONĄ!"
 card_flavour = "(Nie pierwszy i nie ostatni raz)"
 card_text = "Wszystkie wymagania obecnego zadania zostają przerzucone."

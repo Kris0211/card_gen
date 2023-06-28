@@ -1,14 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://bisaljrwn2wdx"]
+[gd_scene load_steps=3 format=3 uid="uid://bisaljrwn2wdx"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_l3l5t"]
+[ext_resource type="Texture2D" uid="uid://bhj52ywvt7lso" path="res://images/tasks/prezentacja.png" id="2_mcywx"]
 
 [node name="StatedCard" instance=ExtResource("1_l3l5t")]
+card_icon = ExtResource("2_mcywx")
 card_name = "Prezentacja grupowa"
 card_flavour = "\"Grupowa\" tylko z nazwy"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color]."
 center_text = true
 
-[node name="Name" parent="." index="4"]
+[node name="Image" parent="." index="5"]
+offset_left = 29.0
+offset_top = 35.0
+offset_right = 364.0
+offset_bottom = 400.0
+texture = ExtResource("2_mcywx")
+
+[node name="Name" parent="." index="6"]
 offset_left = 2.0
 offset_top = 447.0
 offset_right = 382.0
@@ -16,10 +25,10 @@ offset_bottom = 503.0
 theme_override_font_sizes/normal_font_size = 34
 text = "[center]Prezentacja grupowa[/center]"
 
-[node name="Flavour" parent="." index="5"]
+[node name="Flavour" parent="." index="7"]
 text = "[center][i]\"Grupowa\" tylko z nazwy[/i][/center]"
 
-[node name="CardText" parent="." index="7"]
+[node name="CardText" parent="." index="9"]
 text = "
 [center]Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color].[/center]"
 

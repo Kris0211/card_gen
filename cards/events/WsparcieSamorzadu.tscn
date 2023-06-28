@@ -1,14 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dnms5iagvjw2v"]
+[gd_scene load_steps=2 format=3 uid="uid://bdl4lk4pj6x5x"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_j7eel"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_lg6bf"]
 
-[node name="BasicCard" instance=ExtResource("1_j7eel")]
+[node name="BasicCard" instance=ExtResource("1_lg6bf")]
 card_name = "Wsparcie Samorządu"
 card_flavour = "Samorząd poświęca się dla dobra koelktywu"
 card_text = "Każdy student dobiera jedną kartę."
 
 [node name="Name" parent="." index="3"]
-theme_override_font_sizes/normal_font_size = 40
+theme_override_font_sizes/normal_font_size = 43
 text = "[center]Wsparcie Samorządu[/center]"
 
 [node name="Flavour" parent="." index="4"]

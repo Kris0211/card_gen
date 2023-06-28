@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://tbdorhpe7gq7"]
+[gd_scene load_steps=2 format=3 uid="uid://spolrj7a5ug5"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_1xslw"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_gc0g2"]
 
-[node name="BasicCard" instance=ExtResource("1_1xslw")]
+[node name="BasicCard" instance=ExtResource("1_gc0g2")]
 card_name = "Zmiana programu"
 card_flavour = "Ale jak to inne polecenie???"
 card_text = "Po odkryciu zadania musicie przerzucić kość pokazującą wymaganą wiedzę."
