@@ -1,17 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://bdjhine4yr5qy"]
+[gd_scene load_steps=3 format=3 uid="uid://bdjhine4yr5qy"]
 
 [ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_rps14"]
+[ext_resource type="Texture2D" uid="uid://cv0534jmsg67a" path="res://images/items/energol.png" id="2_uynbd"]
 
 [node name="BasicCard" instance=ExtResource("1_rps14")]
+card_icon = ExtResource("2_uynbd")
 card_name = "Energol"
+card_flavour = "I od razu masz siłę do działania!"
 card_text = "Otrzymujesz +1 [color=#FF0000]Odwagi[/color] 
 w tej turze."
 amount = 5
 
-[node name="Name" parent="." index="1"]
+[node name="Image" parent="." index="2"]
+offset_left = 26.7735
+offset_top = 25.1018
+offset_right = 485.773
+offset_bottom = 452.102
+texture = ExtResource("2_uynbd")
+
+[node name="Name" parent="." index="3"]
 text = "[center]Energol[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]I od razu masz siłę do działania![/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Otrzymujesz +1 [color=#FF0000]Odwagi[/color] 
 w tej turze.[/center]"

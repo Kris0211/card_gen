@@ -6,13 +6,13 @@
 [ext_resource type="FontFile" uid="uid://j1cr6vj06n8t" path="res://EdoPL.ttf" id="3_obtgp"]
 [ext_resource type="Texture2D" uid="uid://l8a7yea5p3kq" path="res://images/FancySeparator.bmp" id="4_vkpnv"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p3xl8"]
-bg_color = Color(0.917647, 0.917647, 0.917647, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lglvn"]
+bg_color = Color(1, 1, 1, 1)
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color(0, 0, 0, 1)
+border_color = Color(1, 1, 1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grhdc"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -31,9 +31,11 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_knpfu")
 start_psycha_value = "12"
-student_color = Color(1, 1, 1, 1)
+student_color = Color(0, 0.6, 0.843137, 1)
+card_icon = ExtResource("2_dqcpk")
 card_name = "Mądrala"
-card_text = "Jej kości posiadają ścianki, które liczą się jako dwie kości. "
+card_flavour = "Wykładowca i tak wie lepiej..."
+card_text = "Niektóre ścianki na kostkach liczą się podwójnie. Wtedy można odłożyć jedną taką kość jako parę."
 
 [node name="ColorBackground" type="ColorRect" parent="."]
 layout_mode = 1
@@ -43,14 +45,15 @@ anchor_bottom = 1.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 1)
 
 [node name="PanelText" type="Panel" parent="."]
+self_modulate = Color(0, 0.6, 0.843137, 1)
 layout_mode = 0
+offset_left = 20.0
 offset_top = 426.0
-offset_right = 480.0
-offset_bottom = 720.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_p3xl8")
+offset_right = 460.0
+offset_bottom = 700.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lglvn")
 
 [node name="Image" type="TextureRect" parent="."]
 layout_mode = 0
@@ -62,11 +65,11 @@ expand_mode = 1
 stretch_mode = 6
 
 [node name="PanelPsycha" type="ColorRect" parent="."]
+self_modulate = Color(0, 0.6, 0.843137, 1)
 layout_mode = 0
 offset_left = 349.0
 offset_right = 449.0
 offset_bottom = 161.0
-color = Color(0, 0.462745, 0.654902, 1)
 
 [node name="Panel" type="Panel" parent="PanelPsycha"]
 layout_mode = 0
@@ -89,6 +92,7 @@ expand_mode = 1
 layout_mode = 0
 offset_right = 100.0
 offset_bottom = 70.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("3_obtgp")
 theme_override_font_sizes/normal_font_size = 56
 bbcode_enabled = true
@@ -99,7 +103,7 @@ layout_mode = 0
 offset_top = 430.0
 offset_right = 480.0
 offset_bottom = 483.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("3_obtgp")
 theme_override_fonts/italics_font = ExtResource("3_obtgp")
 theme_override_font_sizes/normal_font_size = 48
@@ -113,23 +117,23 @@ layout_mode = 0
 offset_top = 487.0
 offset_right = 480.0
 offset_bottom = 511.0
-theme_override_colors/default_color = Color(0.278431, 0.278431, 0.278431, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("3_obtgp")
 theme_override_fonts/italics_font = ExtResource("3_obtgp")
 theme_override_font_sizes/normal_font_size = 0
 theme_override_font_sizes/italics_font_size = 20
 bbcode_enabled = true
-text = "[center][i]I tak wykładowca wie lepiej[/i][/center]"
+text = "[center][i]Wykładowca i tak wie lepiej...[/i][/center]"
 scroll_active = false
 shortcut_keys_enabled = false
 
 [node name="Separator" type="TextureRect" parent="."]
-self_modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 26.0
 offset_top = 515.0
 offset_right = 448.0
 offset_bottom = 549.0
+scale = Vector2(1.01317, 1.01393)
 texture = ExtResource("4_vkpnv")
 expand_mode = 1
 stretch_mode = 5
@@ -140,13 +144,13 @@ offset_left = 31.0
 offset_top = 526.0
 offset_right = 446.0
 offset_bottom = 716.0
-theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_fonts/normal_font = ExtResource("3_obtgp")
 theme_override_fonts/italics_font = ExtResource("3_obtgp")
 theme_override_font_sizes/normal_font_size = 26
 theme_override_font_sizes/italics_font_size = 12
 bbcode_enabled = true
 text = "
-[center]Jej kości posiadają ścianki, które liczą się jako dwie kości. [/center]"
+[center]Niektóre ścianki na kostkach liczą się podwójnie. Wtedy można odłożyć jedną taką kość jako parę.[/center]"
 scroll_active = false
 shortcut_keys_enabled = false
