@@ -4,6 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://dofgv5hrbsb3n" path="res://images/tasks/projekt_artystyczny.png" id="2_hnuxi"]
 
 [node name="StatedCard" instance=ExtResource("1_5s026")]
+first_stat_value = "5"
+second_stat_value = "2"
 card_icon = ExtResource("2_hnuxi")
 card_name = "Projekt artystyczny"
 card_flavour = "Zmora umysłów ścisłych"
@@ -33,10 +35,7 @@ text = "
 [center]Jeśli student nie wyrzucił sprytu, to traci [color=#FF0000]4 Psychy[/color] na koniec tury.[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="0"]
-text = "[center]3[/center]"
+text = "[center]5[/center]"
 
 [node name="Value" parent="Stats/Stat2" index="0"]
-text = "[center]19[/center]"
-
-[node name="Value" parent="Stats/Stat3" index="0"]
 text = "[center]2[/center]"

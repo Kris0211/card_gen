@@ -4,10 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://c4nmpchyoux8d" path="res://images/tasks/kolos_z_matmy.png" id="2_uikwr"]
 
 [node name="StatedCard" instance=ExtResource("1_rp6hv")]
+first_stat_value = "9"
+third_stat_value = "8"
 card_icon = ExtResource("2_uikwr")
 card_name = "Kolos z matmy"
 card_flavour = "No nie no, najgorzej"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]1 Psychy + 1[/color] za każdą turę."
+center_text = true
 
 [node name="Image" parent="." index="5"]
 offset_left = 26.0
@@ -23,13 +26,11 @@ text = "[center]Kolos z matmy[/center]"
 text = "[center][i]No nie no, najgorzej[/i][/center]"
 
 [node name="CardText" parent="." index="9"]
-text = "[center]Na koniec tury każdy student traci [color=#FF0000]1 Psychy + 1[/color] za każdą turę.[/center]"
+text = "
+[center]Na koniec tury każdy student traci [color=#FF0000]1 Psychy + 1[/color] za każdą turę.[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="0"]
-text = "[center]8[/center]"
-
-[node name="Value" parent="Stats/Stat2" index="0"]
-text = "[center]12[/center]"
+text = "[center]9[/center]"
 
 [node name="Value" parent="Stats/Stat3" index="0"]
 text = "[center]8[/center]"

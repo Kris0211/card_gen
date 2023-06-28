@@ -3,12 +3,15 @@
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_yc0ne"]
 
 [node name="StatedCard" instance=ExtResource("1_yc0ne")]
+first_stat_value = "2"
+second_stat_value = "5"
+third_stat_value = "8"
 card_name = "Upierdliwe sprawko"
 card_flavour = "Chyba zaraz mnie coś strzeli!"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color]."
 center_text = true
 
-[node name="Name" parent="." index="4"]
+[node name="Name" parent="." index="6"]
 offset_left = 3.0
 offset_top = 446.0
 offset_right = 383.0
@@ -16,10 +19,10 @@ offset_bottom = 502.0
 theme_override_font_sizes/normal_font_size = 36
 text = "[center]Upierdliwe sprawko[/center]"
 
-[node name="Flavour" parent="." index="5"]
+[node name="Flavour" parent="." index="7"]
 text = "[center][i]Chyba zaraz mnie coś strzeli![/i][/center]"
 
-[node name="CardText" parent="." index="7"]
+[node name="CardText" parent="." index="9"]
 text = "
 [center]Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color].[/center]"
 

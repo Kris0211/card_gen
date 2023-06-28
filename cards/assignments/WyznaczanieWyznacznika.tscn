@@ -27,10 +27,10 @@ text = "
 [center]Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color].[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="0"]
-text = "[center]10[/center]"
+text = "[center]5[/center]"
 
 [node name="Value" parent="Stats/Stat2" index="0"]
-text = "[center]8[/center]"
+text = "[center]2[/center]"
 
 [node name="Value" parent="Stats/Stat3" index="0"]
-text = "[center]6[/center]"
+text = "[center]8[/center]"
