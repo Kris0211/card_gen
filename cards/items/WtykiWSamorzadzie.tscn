@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://2jv0dpdu1vdn"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_kxphd"]
+
+[node name="BasicCard" instance=ExtResource("1_kxphd")]
+card_name = "Wtyki w samorządzie"
+card_flavour = "Tacy znajomi to prawdziwy skarb!"
+card_text = "Gdy wyrzucisz [color=#FF0000]Spryt[/color], otrzymujesz +1 do [color=#FF0000]Sprytu[/color]."
+amount = 4
+
+[node name="Name" parent="." index="3"]
+theme_override_font_sizes/normal_font_size = 40
+text = "[center]Wtyki w samorządzie[/center]"
+
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Tacy znajomi to prawdziwy skarb![/i][/center]"
+
+[node name="CardText" parent="." index="6"]
+text = "
+[center]Gdy wyrzucisz [color=#FF0000]Spryt[/color], otrzymujesz +1 do [color=#FF0000]Sprytu[/color].[/center]"

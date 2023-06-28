@@ -4,12 +4,16 @@
 
 [node name="BasicCard" instance=ExtResource("1_7yh2t")]
 card_name = "Zakręcony Wykładowca"
+card_flavour = "Niczego nie można być przy nim pewnym"
 card_text = "Każdemu zadaniu towarzyszą dwa wydarzenia zamiast jednego."
-center_text = false
 
-[node name="Name" parent="." index="1"]
-theme_override_font_sizes/normal_font_size = 18
+[node name="Name" parent="." index="3"]
+theme_override_font_sizes/normal_font_size = 38
 text = "[center]Zakręcony Wykładowca[/center]"
 
-[node name="CardText" parent="." index="2"]
-text = "[center]Każdemu zadaniu towarzyszą dwa wydarzenia zamiast jednego.[/center]"
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Niczego nie można być przy nim pewnym[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
+text = "
+[center]Każdemu zadaniu towarzyszą dwa wydarzenia zamiast jednego.[/center]"

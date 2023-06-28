@@ -4,11 +4,17 @@
 
 [node name="BasicCard" instance=ExtResource("1_gv6op")]
 card_name = "Zły dzień"
-card_text = "Każde wymaganie zadania wzrasta o 2."
+card_flavour = "Lepiej nie drażnić wykładowcy."
+card_text = "Każde wymaganie zadania 
+wzrasta o 2."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Zły dzień[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Lepiej nie drażnić wykładowcy.[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
-[center]Każde wymaganie zadania wzrasta o 2.[/center]"
+[center]Każde wymaganie zadania 
+wzrasta o 2.[/center]"

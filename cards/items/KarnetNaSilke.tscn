@@ -4,14 +4,16 @@
 
 [node name="BasicCard" instance=ExtResource("1_fwiud")]
 card_name = "Karnet na siłkę"
-card_text = "Za każdym razem gdy tracisz [color=#FF0000]Psychę[/color], tracisz 
-1 punkt [color=#FF0000]Psychy[/color] mniej."
+card_flavour = "W zdrowym ciele zdrowy duch!"
+card_text = "Gdy wyrzucisz [color=#FF0000]Odwagę[/color], otrzymujesz +1 do [color=#FF0000]Odwagi[/color]."
 amount = 5
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Karnet na siłkę[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]W zdrowym ciele zdrowy duch![/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
-[center]Za każdym razem gdy tracisz [color=#FF0000]Psychę[/color], tracisz 
-1 punkt [color=#FF0000]Psychy[/color] mniej.[/center]"
+[center]Gdy wyrzucisz [color=#FF0000]Odwagę[/color], otrzymujesz +1 do [color=#FF0000]Odwagi[/color].[/center]"

@@ -4,11 +4,15 @@
 
 [node name="BasicCard" instance=ExtResource("1_3jrxe")]
 card_name = "ERASMUS"
+card_flavour = "Wymiana studentów, wymiana doświadczeń"
 card_text = "Każdy gracz może wymienić swojego studenta na innego."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]ERASMUS[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Wymiana studentów, wymiana doświadczeń[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Każdy gracz może wymienić swojego studenta na innego.[/center]"

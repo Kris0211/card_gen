@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://fycppet1evjr"]
+
+[ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_niptw"]
+
+[node name="StatedCard" instance=ExtResource("1_niptw")]
+first_stat_value = "10"
+second_stat_value = "2"
+third_stat_value = "6"
+card_name = "Nudne sprawko"
+card_text = "Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color]."
+
+[node name="Name" parent="." index="1"]
+text = "[center]Nudne sprawko[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color].[/center]"
+
+[node name="Value" parent="Stats/Stat1" index="1"]
+text = "[center]10[/center]"
+
+[node name="Value" parent="Stats/Stat2" index="1"]
+text = "[center]2[/center]"
+
+[node name="Value" parent="Stats/Stat3" index="1"]
+text = "[center]6[/center]"

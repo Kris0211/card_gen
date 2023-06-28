@@ -5,11 +5,15 @@
 [node name="BasicCard" instance=ExtResource("1_g0kld")]
 scale = Vector2(1, 0.996336)
 card_name = "Obrazliwy mem"
+card_flavour = "Cholibka, wyciekł chat grupowy..."
 card_text = "Wymagana odwaga wzrasta do 12."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Obrazliwy mem[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Cholibka, wyciekł chat grupowy...[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Wymagana odwaga wzrasta do 12.[/center]"

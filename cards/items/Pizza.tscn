@@ -4,12 +4,16 @@
 
 [node name="BasicCard" instance=ExtResource("1_0jhcw")]
 card_name = "Pizza"
+card_flavour = "Smakuje lepiej z przyjaciółmi"
 card_text = "Odnawia 3 [color=#FF0000]Psychy[/color] wszystkim studentom."
 amount = 10
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Pizza[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Smakuje lepiej z przyjaciółmi[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Odnawia 3 [color=#FF0000]Psychy[/color] wszystkim studentom.[/center]"

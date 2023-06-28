@@ -4,11 +4,15 @@
 
 [node name="BasicCard" instance=ExtResource("1_imoxu")]
 card_name = "Dzien Wydziału"
+card_flavour = "Wydarzenie na skalę uczelnianą"
 card_text = "Pasywna umiejętność wykładowcy nie działa do końca zadania."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Dzien Wydziału[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Wydarzenie na skalę uczelnianą[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Pasywna umiejętność wykładowcy nie działa do końca zadania.[/center]"

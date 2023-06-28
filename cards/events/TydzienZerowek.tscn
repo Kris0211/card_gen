@@ -4,11 +4,15 @@
 
 [node name="BasicCard" instance=ExtResource("1_qk38g")]
 card_name = "Tydzień zerówek"
+card_flavour = "Sesja przed sesją!"
 card_text = "Zadanie traci po -2 do każdego wymagania."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Tydzień zerówek[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Sesja przed sesją![/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Zadanie traci po -2 do każdego wymagania.[/center]"

@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvqdsqyx2q304"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_8nyi4"]
+
+[node name="BasicCard" instance=ExtResource("1_8nyi4")]
+card_name = "Zajęcia zdalne"
+card_flavour = "Taka okazja często się nie zdarza!"
+card_text = "Po zakończeniu rzutów
+każdy student może zamienić się 1 odłożoną kością z innym."
+
+[node name="Name" parent="." index="3"]
+text = "[center]Zajęcia zdalne[/center]"
+
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Taka okazja często się nie zdarza![/i][/center]"
+
+[node name="CardText" parent="." index="6"]
+text = "
+[center]Po zakończeniu rzutów
+każdy student może zamienić się 1 odłożoną kością z innym.[/center]"

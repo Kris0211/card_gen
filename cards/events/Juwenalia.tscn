@@ -4,11 +4,15 @@
 
 [node name="BasicCard" instance=ExtResource("1_tic5l")]
 card_name = "Juwenalia"
+card_flavour = "Święto wszystkich studentów!"
 card_text = "Każdy student w ciągu tury może stracić maksymalnie [color=#FF0000]1 Psychy[/color]."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Juwenalia[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Święto wszystkich studentów![/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Każdy student w ciągu tury może stracić maksymalnie [color=#FF0000]1 Psychy[/color].[/center]"

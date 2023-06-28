@@ -4,12 +4,16 @@
 
 [node name="BasicCard" instance=ExtResource("1_j7eel")]
 card_name = "Wsparcie Samorządu"
+card_flavour = "Samorząd poświęca się dla dobra koelktywu"
 card_text = "Każdy student dobiera jedną kartę."
 
-[node name="Name" parent="." index="1"]
-theme_override_font_sizes/normal_font_size = 20
+[node name="Name" parent="." index="3"]
+theme_override_font_sizes/normal_font_size = 40
 text = "[center]Wsparcie Samorządu[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Samorząd poświęca się dla dobra koelktywu[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Każdy student dobiera jedną kartę.[/center]"

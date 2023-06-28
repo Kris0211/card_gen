@@ -7,9 +7,9 @@ card_name = "Konsultacje"
 card_text = "Przerzuć dowolną ilość kości, które jeszcze nie zostały odłożone."
 amount = 5
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Konsultacje[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Przerzuć dowolną ilość kości, które jeszcze nie zostały odłożone.[/center]"

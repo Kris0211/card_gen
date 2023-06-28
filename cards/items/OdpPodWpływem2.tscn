@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjb22st8ivpck"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_g8eev"]
+
+[node name="BasicCard" instance=ExtResource("1_g8eev")]
+card_name = "???"
+card_text = "Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale odejmujesz 3 punkty [color=#FF0000]Sprytu[/color] od wymagań."
+center_text = true
+amount = 8
+
+[node name="Name" parent="." index="1"]
+theme_override_font_sizes/normal_font_size = 16
+text = "[center]???[/center]"
+
+[node name="CardText" parent="." index="2"]
+text = "
+[center]Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale odejmujesz 3 punkty [color=#FF0000]Sprytu[/color] od wymagań.[/center]"

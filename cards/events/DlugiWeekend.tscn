@@ -4,11 +4,15 @@
 
 [node name="BasicCard" instance=ExtResource("1_0ne0d")]
 card_name = "Długi weekend"
+card_flavour = "Boże ciało? Prędzej  \"Boże nareszcie\""
 card_text = "Każdy student jednorazowo leczy się o [color=#FF0000]5 Psychy[/color], ale pomijany jest następny tydzień"
-center_text = false
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Długi weekend[/center]"
 
-[node name="CardText" parent="." index="2"]
-text = "[center]Każdy student jednorazowo leczy się o [color=#FF0000]5 Psychy[/color], ale pomijany jest następny tydzień[/center]"
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Boże ciało? Prędzej  \"Boże nareszcie\"[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
+text = "
+[center]Każdy student jednorazowo leczy się o [color=#FF0000]5 Psychy[/color], ale pomijany jest następny tydzień[/center]"

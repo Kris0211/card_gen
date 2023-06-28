@@ -4,11 +4,19 @@
 
 [node name="BasicCard" instance=ExtResource("1_5chdm")]
 card_name = "Miły Prodziekan"
-card_text = "Po odkryciu zdania musicie przerzucić jedną z kości wymagań."
+card_flavour = "Aż podejrzanie miły..."
+card_text = "Po odkryciu zdania 
+musicie przerzucić jedną 
+z kości wymagań."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Miły Prodziekan[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Aż podejrzanie miły...[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
-[center]Po odkryciu zdania musicie przerzucić jedną z kości wymagań.[/center]"
+[center]Po odkryciu zdania 
+musicie przerzucić jedną 
+z kości wymagań.[/center]"

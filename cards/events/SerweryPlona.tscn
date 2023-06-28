@@ -4,11 +4,15 @@
 
 [node name="BasicCard" instance=ExtResource("1_lk8cx")]
 card_name = "SERWERY PŁONĄ!"
+card_flavour = "(Nie pierwszy i nie ostatni raz)"
 card_text = "Wszystkie wymagania obecnego zadania zostają przerzucone."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]SERWERY PŁONĄ![/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i](Nie pierwszy i nie ostatni raz)[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Wszystkie wymagania obecnego zadania zostają przerzucone.[/center]"

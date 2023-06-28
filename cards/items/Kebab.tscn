@@ -4,14 +4,18 @@
 
 [node name="BasicCard" instance=ExtResource("1_ho6wt")]
 card_name = "Kebab"
+card_flavour = "Dobry kebab piecze dwa razy"
 card_text = "Jednorazowo uniknij utraty [color=#FF0000]Psychy[/color].
 "
 amount = 5
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Kebab[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Dobry kebab piecze dwa razy[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Jednorazowo uniknij utraty [color=#FF0000]Psychy[/color].
 [/center]"

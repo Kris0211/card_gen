@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://o2lj7mdj3odt"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_41003"]
+
+[node name="BasicCard" instance=ExtResource("1_41003")]
+card_name = "Karta biblioteczna"
+card_flavour = "Nieskończona mądrość na wyciągnięcie ręki"
+card_text = "Gdy wyrzucisz [color=#FF0000]Wiedzę[/color], otrzymujesz +1 do [color=#FF0000]Wiedzy[/color]."
+amount = 4
+
+[node name="Name" parent="." index="3"]
+text = "[center]Karta biblioteczna[/center]"
+
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Nieskończona mądrość na wyciągnięcie ręki[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
+text = "
+[center]Gdy wyrzucisz [color=#FF0000]Wiedzę[/color], otrzymujesz +1 do [color=#FF0000]Wiedzy[/color].[/center]"

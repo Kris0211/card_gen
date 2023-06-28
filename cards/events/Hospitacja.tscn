@@ -4,11 +4,15 @@
 
 [node name="BasicCard" instance=ExtResource("1_h3pmx")]
 card_name = "Hospitacja"
+card_flavour = "okazja do ponarzekania. Ale czy na pewno?"
 card_text = "Wykładowca zostaje zamieniony na losowego innego wykładowcę."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Hospitacja[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]okazja do ponarzekania. Ale czy na pewno?[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Wykładowca zostaje zamieniony na losowego innego wykładowcę.[/center]"

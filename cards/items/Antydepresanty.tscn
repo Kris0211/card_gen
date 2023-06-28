@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnx8v47yr6bum"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_fwiud"]
+
+[node name="BasicCard" instance=ExtResource("1_fwiud")]
+card_name = "Antydepresanty"
+card_flavour = "Pomagają zachować resztki psychy"
+card_text = "Za każdym razem gdy tracisz [color=#FF0000]Psychę[/color], tracisz 
+1 punkt [color=#FF0000]Psychy[/color] mniej."
+amount = 4
+
+[node name="Name" parent="." index="3"]
+text = "[center]Antydepresanty[/center]"
+
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Pomagają zachować resztki psychy[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
+text = "
+[center]Za każdym razem gdy tracisz [color=#FF0000]Psychę[/color], tracisz 
+1 punkt [color=#FF0000]Psychy[/color] mniej.[/center]"

@@ -4,11 +4,15 @@
 
 [node name="BasicCard" instance=ExtResource("1_wxuqo")]
 card_name = "Domówka"
+card_flavour = "Impreza do białego rana"
 card_text = "Każdy student odrzuca jedną kartę, ale za to odzyskuje [color=#FF0000]+ 2 Psychy[/color]."
 
-[node name="Name" parent="." index="1"]
+[node name="Name" parent="." index="3"]
 text = "[center]Domówka[/center]"
 
-[node name="CardText" parent="." index="2"]
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Impreza do białego rana[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
 text = "
 [center]Każdy student odrzuca jedną kartę, ale za to odzyskuje [color=#FF0000]+ 2 Psychy[/color].[/center]"

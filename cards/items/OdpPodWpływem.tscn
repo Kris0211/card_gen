@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdf58n5w8o628"]
+
+[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_lxs2j"]
+
+[node name="BasicCard" instance=ExtResource("1_lxs2j")]
+card_name = "Odpowiedź pod wpływem"
+card_flavour = "Dla odwagi nie zaszkodzi..."
+card_text = "Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale odejmujesz 3 punkty [color=#FF0000]Odwagi[/color] od wymagań."
+amount = 8
+
+[node name="Name" parent="." index="3"]
+theme_override_font_sizes/normal_font_size = 36
+text = "[center]Odpowiedź pod wpływem[/center]"
+
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Dla odwagi nie zaszkodzi...[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
+text = "
+[center]Tracisz 3 punkty [color=#FF0000]Psychy[/color], ale odejmujesz 3 punkty [color=#FF0000]Odwagi[/color] od wymagań.[/center]"
