@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://l8a7yea5p3kq" path="res://images/FancySeparator.bmp" id="7_q8sw5"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mhw1g"]
-bg_color = Color(0, 0, 0, 1)
+bg_color = Color(1, 1, 1, 1)
 border_width_left = 2
 border_width_top = 2
 border_width_right = 2
@@ -98,7 +98,7 @@ layout_mode = 0
 offset_top = 440.0
 offset_right = 380.0
 offset_bottom = 496.0
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_glmh8")
 theme_override_fonts/italics_font = ExtResource("6_glmh8")
 theme_override_font_sizes/normal_font_size = 48
@@ -112,7 +112,7 @@ layout_mode = 0
 offset_top = 495.0
 offset_right = 378.0
 offset_bottom = 519.0
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_glmh8")
 theme_override_fonts/italics_font = ExtResource("6_glmh8")
 theme_override_font_sizes/normal_font_size = 0
@@ -123,6 +123,7 @@ scroll_active = false
 shortcut_keys_enabled = false
 
 [node name="Separator" type="TextureRect" parent="."]
+self_modulate = Color(0, 0, 0, 1)
 layout_mode = 0
 offset_left = 18.0
 offset_top = 511.0
@@ -139,7 +140,7 @@ offset_left = 23.0
 offset_top = 539.0
 offset_right = 358.0
 offset_bottom = 706.0
-theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("6_glmh8")
 theme_override_fonts/italics_font = ExtResource("6_glmh8")
 theme_override_font_sizes/normal_font_size = 26
