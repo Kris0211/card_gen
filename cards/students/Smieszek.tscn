@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://blg37fucygaja"]
+
+[ext_resource type="PackedScene" uid="uid://br5tyuysp5q4g" path="res://logic/StudentCard.tscn" id="1_0c5d0"]
+[ext_resource type="Texture2D" uid="uid://iqdfb4ukgopi" path="res://images/students/smieszek.png" id="2_obbsh"]
+
+[node name="StudentCard" instance=ExtResource("1_0c5d0")]
+scale = Vector2(0.998742, 1)
+start_psycha_value = "10"
+student_color = Color(0.913725, 0.619608, 0.219608, 1)
+card_icon = ExtResource("2_obbsh")
+card_name = "Śmieszek"
+card_flavour = "Przecież śmiech to zdrowie!"
+card_text = "Gdy odnawia psychę innemu studentowi, regeneruje tyle 
+samo psychy samemu sobie."
+
+[node name="PanelText" parent="." index="1"]
+self_modulate = Color(0.913725, 0.619608, 0.219608, 1)
+
+[node name="Image" parent="." index="2"]
+offset_left = -48.0605
+offset_right = 410.94
+texture = ExtResource("2_obbsh")
+
+[node name="PanelPsycha" parent="." index="3"]
+self_modulate = Color(0.913725, 0.619608, 0.219608, 1)
+
+[node name="Psycha" parent="PanelPsycha" index="1"]
+text = "[center]10[/center]"
+
+[node name="Name" parent="." index="4"]
+text = "[center]Śmieszek[/center]"
+
+[node name="Flavour" parent="." index="5"]
+text = "[center][i]Przecież śmiech to zdrowie![/i][/center]"
+
+[node name="CardText" parent="." index="7"]
+text = "
+[center]Gdy odnawia psychę innemu studentowi, regeneruje tyle 
+samo psychy samemu sobie.[/center]"

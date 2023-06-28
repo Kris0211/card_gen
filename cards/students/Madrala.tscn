@@ -9,9 +9,6 @@ card_name = "Mądrala"
 card_flavour = "Wykładowca i tak wie lepiej..."
 card_text = "Niektóre ścianki na kostkach liczą się podwójnie. Wtedy można odłożyć jedną taką kość jako parę."
 
-[node name="PanelPsycha" parent="." index="3"]
-self_modulate = Color(0, 0.6, 0.843137, 1)
-
 [node name="Psycha" parent="PanelPsycha" index="1"]
 text = "[center]10[/center]"
 

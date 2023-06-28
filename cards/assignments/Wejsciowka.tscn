@@ -7,14 +7,14 @@ first_stat_value = "G"
 second_stat_value = "G"
 third_stat_value = "G"
 card_name = "Wejściówka"
-card_flavour = "O matko boska"
+card_flavour = "O matko boska..."
 card_text = "Jeśli nie zostanie rozwiązana w ciągu jednej tury, to znika i każdy student traci [color=#FF0000]4 Psychy[/color]."
 
 [node name="Name" parent="." index="4"]
 text = "[center]Wejściówka[/center]"
 
 [node name="Flavour" parent="." index="5"]
-text = "[center][i]O matko boska[/i][/center]"
+text = "[center][i]O matko boska...[/i][/center]"
 
 [node name="CardText" parent="." index="7"]
 text = "[center]Jeśli nie zostanie rozwiązana w ciągu jednej tury, to znika i każdy student traci [color=#FF0000]4 Psychy[/color].[/center]"

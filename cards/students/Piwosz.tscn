@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8hb5g43coboc"]
+
+[ext_resource type="PackedScene" uid="uid://br5tyuysp5q4g" path="res://logic/StudentCard.tscn" id="1_fa43v"]
+[ext_resource type="Texture2D" uid="uid://bymtwkfdmnphe" path="res://images/students/alkoholik.png" id="2_rpcrr"]
+
+[node name="StudentCard" instance=ExtResource("1_fa43v")]
+scale = Vector2(0.998742, 1)
+start_psycha_value = "10"
+student_color = Color(0.933333, 0.74902, 0.101961, 1)
+card_icon = ExtResource("2_rpcrr")
+card_name = "Piwosz"
+card_flavour = "Piwo to moje paliwo!"
+card_text = "Zaczyna grę bez kart. Gdy na jednej z kości wyrzuci piwo, może odłożyć ją, by dobrać kartę."
+
+[node name="PanelText" parent="." index="1"]
+self_modulate = Color(0.933333, 0.74902, 0.101961, 1)
+
+[node name="Image" parent="." index="2"]
+offset_left = -44.0554
+offset_right = 414.945
+texture = ExtResource("2_rpcrr")
+
+[node name="PanelPsycha" parent="." index="3"]
+self_modulate = Color(0.933333, 0.74902, 0.101961, 1)
+
+[node name="Psycha" parent="PanelPsycha" index="1"]
+text = "[center]10[/center]"
+
+[node name="Name" parent="." index="4"]
+text = "[center]Piwosz[/center]"
+
+[node name="Flavour" parent="." index="5"]
+text = "[center][i]Piwo to moje paliwo![/i][/center]"
+
+[node name="CardText" parent="." index="7"]
+text = "
+[center]Zaczyna grę bez kart. Gdy na jednej z kości wyrzuci piwo, może odłożyć ją, by dobrać kartę.[/center]"

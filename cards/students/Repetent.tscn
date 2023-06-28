@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpbw80p30kc6x"]
+
+[ext_resource type="PackedScene" uid="uid://br5tyuysp5q4g" path="res://logic/StudentCard.tscn" id="1_rfs7k"]
+[ext_resource type="Texture2D" uid="uid://b6e6rhqiy2o87" path="res://images/students/repetent.png" id="2_oj8w2"]
+
+[node name="StudentCard" instance=ExtResource("1_rfs7k")]
+scale = Vector2(0.998742, 1)
+start_psycha_value = "10"
+student_color = Color(0.129412, 0.498039, 0.0980392, 1)
+card_icon = ExtResource("2_oj8w2")
+card_name = "Repetent"
+card_flavour = "Co mnie nie zabije, to mnie wzmocni."
+card_text = "Posiada specjalny symbol na kościach. Gdy go wyrzuci, może przerzucić dowolną nieodłożoną kość wybranego studenta."
+
+[node name="PanelText" parent="." index="1"]
+self_modulate = Color(0.129412, 0.498039, 0.0980392, 1)
+
+[node name="Image" parent="." index="2"]
+offset_left = -32.0403
+offset_right = 426.96
+texture = ExtResource("2_oj8w2")
+
+[node name="PanelPsycha" parent="." index="3"]
+self_modulate = Color(0.129412, 0.498039, 0.0980392, 1)
+
+[node name="Psycha" parent="PanelPsycha" index="1"]
+text = "[center]10[/center]"
+
+[node name="Name" parent="." index="4"]
+text = "[center]Repetent[/center]"
+
+[node name="Flavour" parent="." index="5"]
+text = "[center][i]Co mnie nie zabije, to mnie wzmocni.[/i][/center]"
+
+[node name="CardText" parent="." index="7"]
+text = "
+[center]Posiada specjalny symbol na kościach. Gdy go wyrzuci, może przerzucić dowolną nieodłożoną kość wybranego studenta.[/center]"

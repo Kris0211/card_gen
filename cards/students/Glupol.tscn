@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1aklrbvkw8ol"]
+
+[ext_resource type="PackedScene" uid="uid://br5tyuysp5q4g" path="res://logic/StudentCard.tscn" id="1_pfp8r"]
+
+[node name="StudentCard" instance=ExtResource("1_pfp8r")]
+scale = Vector2(0.998742, 1)
+start_psycha_value = "10"
+student_color = Color(0.0196078, 0.0588235, 0.823529, 1)
+card_name = "Głupol"
+card_flavour = "Jak to punkty na minusie?!"
+card_text = "Może odłożyć kość z pustą ścianką jako parę do wyrzuconego symbolu"
+
+[node name="PanelText" parent="." index="1"]
+self_modulate = Color(0.0196078, 0.0588235, 0.823529, 1)
+
+[node name="PanelPsycha" parent="." index="3"]
+self_modulate = Color(0.0196078, 0.0588235, 0.823529, 1)
+
+[node name="Psycha" parent="PanelPsycha" index="1"]
+text = "[center]10[/center]"
+
+[node name="Name" parent="." index="4"]
+text = "[center]Głupol[/center]"
+
+[node name="Flavour" parent="." index="5"]
+text = "[center][i]Jak to punkty na minusie?![/i][/center]"
+
+[node name="CardText" parent="." index="7"]
+text = "
+[center]Może odłożyć kość z pustą ścianką jako parę do wyrzuconego symbolu[/center]"

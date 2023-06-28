@@ -4,7 +4,9 @@
 
 [node name="StatedCard" instance=ExtResource("1_5s026")]
 card_name = "Projekt artystyczny"
+card_flavour = "Zmora umysłów ścisłych"
 card_text = "Jeśli student nie wyrzucił sprytu, to traci [color=#FF0000]4 Psychy[/color] na koniec tury."
+center_text = true
 
 [node name="Name" parent="." index="4"]
 offset_left = 5.0
@@ -14,9 +16,12 @@ offset_bottom = 503.0
 theme_override_font_sizes/normal_font_size = 34
 text = "[center]Projekt artystyczny[/center]"
 
+[node name="Flavour" parent="." index="5"]
+text = "[center][i]Zmora umysłów ścisłych[/i][/center]"
+
 [node name="CardText" parent="." index="7"]
-theme_override_font_sizes/normal_font_size = 15
-text = "[center]Jeśli student nie wyrzucił sprytu, to traci [color=#FF0000]4 Psychy[/color] na koniec tury.[/center]"
+text = "
+[center]Jeśli student nie wyrzucił sprytu, to traci [color=#FF0000]4 Psychy[/color] na koniec tury.[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="0"]
 text = "[center]3[/center]"
