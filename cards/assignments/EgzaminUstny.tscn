@@ -1,15 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://bh7spw2iivur0"]
+[gd_scene load_steps=3 format=3 uid="uid://bh7spw2iivur0"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_i7bkt"]
+[ext_resource type="Texture2D" uid="uid://dw4ln1a87jlx0" path="res://images/tasks/mikrofon.png" id="2_2ywtu"]
 
 [node name="StatedCard" instance=ExtResource("1_i7bkt")]
 first_stat_value = "9"
 second_stat_value = "6"
 third_stat_value = "11"
+card_icon = ExtResource("2_2ywtu")
 card_name = "Egzamin ustny"
 card_flavour = "Eee... yyy..."
 card_text = "Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color]."
 center_text = true
+
+[node name="Image" parent="." index="5"]
+texture = ExtResource("2_2ywtu")
 
 [node name="Name" parent="." index="6"]
 text = "[center]Egzamin ustny[/center]"

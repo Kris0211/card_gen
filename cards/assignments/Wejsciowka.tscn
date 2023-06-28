@@ -1,14 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbiaq0a0aby17"]
+[gd_scene load_steps=3 format=3 uid="uid://dbiaq0a0aby17"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_j4ge4"]
+[ext_resource type="Texture2D" uid="uid://b1m5g0dcu410" path="res://images/tasks/wejsciowka.png" id="2_2pier"]
 
 [node name="StatedCard" instance=ExtResource("1_j4ge4")]
 first_stat_value = "G"
 second_stat_value = "G"
 third_stat_value = "G"
+card_icon = ExtResource("2_2pier")
 card_name = "Wejściówka"
 card_flavour = "O matko boska..."
 card_text = "Jeśli nie zostanie rozwiązana w ciągu jednej tury, to znika i każdy student traci [color=#FF0000]4 Psychy[/color]."
+
+[node name="Image" parent="." index="5"]
+texture = ExtResource("2_2pier")
 
 [node name="Name" parent="." index="6"]
 text = "[center]Wejściówka[/center]"
