@@ -6,13 +6,18 @@
 [ext_resource type="FontFile" uid="uid://j1cr6vj06n8t" path="res://EdoPL.ttf" id="3_obtgp"]
 [ext_resource type="Texture2D" uid="uid://l8a7yea5p3kq" path="res://images/FancySeparator.bmp" id="4_vkpnv"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lglvn"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4d5yi"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
 bg_color = Color(1, 1, 1, 1)
 border_width_left = 4
 border_width_top = 4
 border_width_right = 4
 border_width_bottom = 4
-border_color = Color(1, 1, 1, 1)
+border_color = Color(0, 0, 0, 1)
+corner_detail = 1
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_grhdc"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
@@ -33,9 +38,9 @@ script = ExtResource("1_knpfu")
 start_psycha_value = "12"
 student_color = Color(0, 0.6, 0.843137, 1)
 card_icon = ExtResource("2_dqcpk")
-card_name = "Mądrala"
-card_flavour = "Wykładowca i tak wie lepiej..."
-card_text = "Niektóre ścianki na kostkach liczą się podwójnie. Wtedy można odłożyć jedną taką kość jako parę."
+card_name = "Nazwa"
+card_flavour = "Flavour"
+card_text = "opis"
 
 [node name="ColorBackground" type="ColorRect" parent="."]
 layout_mode = 1
@@ -53,7 +58,7 @@ offset_left = 20.0
 offset_top = 426.0
 offset_right = 460.0
 offset_bottom = 700.0
-theme_override_styles/panel = SubResource("StyleBoxFlat_lglvn")
+theme_override_styles/panel = SubResource("StyleBoxFlat_4d5yi")
 
 [node name="Image" type="TextureRect" parent="."]
 layout_mode = 0
@@ -64,12 +69,14 @@ texture = ExtResource("2_dqcpk")
 expand_mode = 1
 stretch_mode = 6
 
-[node name="PanelPsycha" type="ColorRect" parent="."]
+[node name="PanelPsycha" type="Panel" parent="."]
 self_modulate = Color(0, 0.6, 0.843137, 1)
 layout_mode = 0
 offset_left = 349.0
+offset_top = -4.0
 offset_right = 449.0
 offset_bottom = 161.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4d5yi")
 
 [node name="Panel" type="Panel" parent="PanelPsycha"]
 layout_mode = 0
@@ -108,7 +115,7 @@ theme_override_fonts/normal_font = ExtResource("3_obtgp")
 theme_override_fonts/italics_font = ExtResource("3_obtgp")
 theme_override_font_sizes/normal_font_size = 48
 bbcode_enabled = true
-text = "[center]Mądrala[/center]"
+text = "[center]Nazwa[/center]"
 scroll_active = false
 shortcut_keys_enabled = false
 
@@ -123,7 +130,7 @@ theme_override_fonts/italics_font = ExtResource("3_obtgp")
 theme_override_font_sizes/normal_font_size = 0
 theme_override_font_sizes/italics_font_size = 20
 bbcode_enabled = true
-text = "[center][i]Wykładowca i tak wie lepiej...[/i][/center]"
+text = "[center][i]Flavour[/i][/center]"
 scroll_active = false
 shortcut_keys_enabled = false
 
@@ -151,6 +158,6 @@ theme_override_font_sizes/normal_font_size = 26
 theme_override_font_sizes/italics_font_size = 12
 bbcode_enabled = true
 text = "
-[center]Niektóre ścianki na kostkach liczą się podwójnie. Wtedy można odłożyć jedną taką kość jako parę.[/center]"
+[center]opis[/center]"
 scroll_active = false
 shortcut_keys_enabled = false

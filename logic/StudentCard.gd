@@ -13,5 +13,5 @@ func _process(_delta):
 	super(_delta)
 	psycha_value.text = "[center]" + str(start_psycha_value) + "[/center]"
 	psycha_panel.self_modulate = student_color
-	text_panel.theme.bg_color = student_color
+	text_panel.self_modulate = student_color
 #	background.self_modulate = student_color * Color.WHITE
