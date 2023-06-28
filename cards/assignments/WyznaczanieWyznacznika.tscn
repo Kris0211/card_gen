@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://227yubalq14n"]
+[gd_scene load_steps=2 format=3 uid="uid://dhj4rnh8vyyn6"]
 
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_1iay7"]
 
@@ -9,19 +9,22 @@ third_stat_value = "6"
 card_name = "Wyznaczanie wyznacznika"
 card_text = "Na koniec tury wybrany student traci [color=#FF0000]5 Psychy[/color]."
 
-[node name="Name" parent="." index="1"]
-theme_override_font_sizes/normal_font_size = 16
+[node name="Name" parent="." index="4"]
+offset_left = -2.0
+offset_top = 452.0
+offset_right = 378.0
+offset_bottom = 508.0
+theme_override_font_sizes/normal_font_size = 28
 text = "[center]Wyznaczanie wyznacznika[/center]"
 
-[node name="CardText" parent="." index="2"]
-text = "
-[center]Na koniec tury wybrany student traci [color=#FF0000]5 Psychy[/color].[/center]"
+[node name="CardText" parent="." index="7"]
+text = "[center]Na koniec tury wybrany student traci [color=#FF0000]5 Psychy[/color].[/center]"
 
-[node name="Value" parent="Stats/Stat1" index="1"]
+[node name="Value" parent="Stats/Stat1" index="0"]
 text = "[center]10[/center]"
 
-[node name="Value" parent="Stats/Stat2" index="1"]
+[node name="Value" parent="Stats/Stat2" index="0"]
 text = "[center]8[/center]"
 
-[node name="Value" parent="Stats/Stat3" index="1"]
+[node name="Value" parent="Stats/Stat3" index="0"]
 text = "[center]6[/center]"

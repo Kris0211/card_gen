@@ -3,25 +3,22 @@
 [ext_resource type="PackedScene" uid="uid://d4mlv7l1yrpco" path="res://logic/StatedCard.tscn" id="1_l3l5t"]
 
 [node name="StatedCard" instance=ExtResource("1_l3l5t")]
-first_stat_value = 5
-second_stat_value = 2
-third_stat_value = 8
 card_name = "Prezentacja grupowa"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color]."
 
-[node name="Name" parent="." index="1"]
-theme_override_font_sizes/normal_font_size = 20
+[node name="Name" parent="." index="4"]
+offset_left = 2.0
+offset_top = 447.0
+offset_right = 382.0
+offset_bottom = 503.0
+theme_override_font_sizes/normal_font_size = 34
 text = "[center]Prezentacja grupowa[/center]"
 
-[node name="CardText" parent="." index="2"]
-text = "
-[center]Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color].[/center]"
+[node name="CardText" parent="." index="7"]
+text = "[center]Na koniec tury każdy student traci [color=#FF0000]3 Psychy[/color].[/center]"
 
-[node name="Value" parent="Stats/Stat1" index="1"]
+[node name="Value" parent="Stats/Stat1" index="0"]
 text = "[center]5[/center]"
 
-[node name="Value" parent="Stats/Stat2" index="1"]
-text = "[center]2[/center]"
-
-[node name="Value" parent="Stats/Stat3" index="1"]
+[node name="Value" parent="Stats/Stat3" index="0"]
 text = "[center]8[/center]"
