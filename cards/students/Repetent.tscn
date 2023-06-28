@@ -16,8 +16,9 @@ card_text = "Posiada specjalny symbol na kościach. Gdy go wyrzuci, może przerz
 self_modulate = Color(0.129412, 0.498039, 0.0980392, 1)
 
 [node name="Image" parent="." index="2"]
-offset_left = -32.0403
-offset_right = 426.96
+offset_left = -10.0126
+offset_top = 2.0
+offset_right = 375.987
 texture = ExtResource("2_oj8w2")
 
 [node name="PanelPsycha" parent="." index="3"]
