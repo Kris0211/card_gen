@@ -1,8 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://b3aj7640ab3nc"]
+[gd_scene load_steps=2 format=3 uid="uid://3ov6h4hx7xwi"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_umpqw"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_2xxvy"]
 
-[node name="BasicCard" instance=ExtResource("1_umpqw")]
+[node name="BasicCard" instance=ExtResource("1_2xxvy")]
 card_name = "Humorzasty Doktor"
 card_flavour = "Bywają lepsze i gorsze dni..."
 card_text = "Po odkryciu zadania musicie przerzucić kość pokazującą wymaganą odwagę."

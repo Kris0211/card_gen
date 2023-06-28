@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dxudrejjpvm8l"]
+[gd_scene load_steps=2 format=3 uid="uid://dh5fg0ifjlt4l"]
 
-[ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_5chdm"]
+[ext_resource type="PackedScene" uid="uid://c8wugg86bkoaa" path="res://logic/BasicDarkCard.tscn" id="1_aqelw"]
 
-[node name="BasicCard" instance=ExtResource("1_5chdm")]
+[node name="BasicCard" instance=ExtResource("1_aqelw")]
+scale = Vector2(1.00571, 0.995944)
 card_name = "Miły Prodziekan"
 card_flavour = "Aż podejrzanie miły..."
 card_text = "Po odkryciu zdania 
