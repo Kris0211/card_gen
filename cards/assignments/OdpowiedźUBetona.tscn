@@ -6,6 +6,7 @@
 second_stat_value = "6"
 third_stat_value = "0"
 card_name = "Odpowiedź u betona"
+card_flavour = "Nawet nie próbuj sobie żartować."
 card_text = "Za każdym razem, gdy student wyrzuci spryt, traci [color=#FF0000]1 Psychy[/color]. Spryt zawsze wynosi 0."
 
 [node name="Name" parent="." index="4"]
@@ -13,6 +14,9 @@ offset_top = 448.0
 offset_bottom = 504.0
 theme_override_font_sizes/normal_font_size = 34
 text = "[center]Odpowiedź u betona[/center]"
+
+[node name="Flavour" parent="." index="5"]
+text = "[center][i]Nawet nie próbuj sobie żartować.[/i][/center]"
 
 [node name="CardText" parent="." index="7"]
 text = "[center]Za każdym razem, gdy student wyrzuci spryt, traci [color=#FF0000]1 Psychy[/color]. Spryt zawsze wynosi 0.[/center]"

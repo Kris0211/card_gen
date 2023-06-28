@@ -7,6 +7,7 @@ first_stat_icon = null
 second_stat_icon = null
 third_stat_icon = null
 card_name = "Dokumentacja Projektu"
+card_flavour = "ktoś to w ogóle czyta?"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color]."
 amount = 0
 
@@ -15,6 +16,9 @@ offset_top = 450.0
 offset_bottom = 511.0
 theme_override_font_sizes/normal_font_size = 30
 text = "[center]Dokumentacja Projektu[/center]"
+
+[node name="Flavour" parent="." index="5"]
+text = "[center][i]ktoś to w ogóle czyta?[/i][/center]"
 
 [node name="CardText" parent="." index="7"]
 text = "[center]Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color].[/center]"

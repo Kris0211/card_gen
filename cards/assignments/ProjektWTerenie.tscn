@@ -4,7 +4,9 @@
 
 [node name="StatedCard" instance=ExtResource("1_t6k4e")]
 card_name = "Projekt w terenie"
+card_flavour = "Super, ale czemu tak daleko?"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color]."
+center_text = true
 
 [node name="Name" parent="." index="4"]
 offset_left = -4.0
@@ -14,8 +16,12 @@ offset_bottom = 498.0
 theme_override_font_sizes/normal_font_size = 40
 text = "[center]Projekt w terenie[/center]"
 
+[node name="Flavour" parent="." index="5"]
+text = "[center][i]Super, ale czemu tak daleko?[/i][/center]"
+
 [node name="CardText" parent="." index="7"]
-text = "[center]Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color].[/center]"
+text = "
+[center]Na koniec tury każdy student traci [color=#FF0000]2 Psychy[/color].[/center]"
 
 [node name="Value" parent="Stats/Stat1" index="0"]
 text = "[center]3[/center]"

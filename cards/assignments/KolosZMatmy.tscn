@@ -4,14 +4,14 @@
 
 [node name="StatedCard" instance=ExtResource("1_rp6hv")]
 card_name = "Kolos z matmy"
-card_flavour = "No nie no najgorzej"
+card_flavour = "No nie no, najgorzej"
 card_text = "Na koniec tury każdy student traci [color=#FF0000]1 Psychy + 1[/color] za każdą turę."
 
 [node name="Name" parent="." index="4"]
 text = "[center]Kolos z matmy[/center]"
 
 [node name="Flavour" parent="." index="5"]
-text = "[center][i]No nie no najgorzej[/i][/center]"
+text = "[center][i]No nie no, najgorzej[/i][/center]"
 
 [node name="CardText" parent="." index="7"]
 text = "[center]Na koniec tury każdy student traci [color=#FF0000]1 Psychy + 1[/color] za każdą turę.[/center]"

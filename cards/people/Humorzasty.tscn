@@ -3,12 +3,17 @@
 [ext_resource type="PackedScene" uid="uid://b2nm0fw4a8i4t" path="res://logic/BasicCard.tscn" id="1_umpqw"]
 
 [node name="BasicCard" instance=ExtResource("1_umpqw")]
-card_name = "Humorzasty Dr"
+card_name = "Humorzasty Doktor"
+card_flavour = "Bywają lepsze i gorsze dni..."
 card_text = "Po odkryciu zadania musicie przerzucić kość pokazującą wymaganą odwagę."
-center_text = false
 
-[node name="Name" parent="." index="1"]
-text = "[center]Humorzasty Dr[/center]"
+[node name="Name" parent="." index="3"]
+theme_override_font_sizes/normal_font_size = 42
+text = "[center]Humorzasty Doktor[/center]"
 
-[node name="CardText" parent="." index="2"]
-text = "[center]Po odkryciu zadania musicie przerzucić kość pokazującą wymaganą odwagę.[/center]"
+[node name="Flavour" parent="." index="4"]
+text = "[center][i]Bywają lepsze i gorsze dni...[/i][/center]"
+
+[node name="CardText" parent="." index="6"]
+text = "
+[center]Po odkryciu zadania musicie przerzucić kość pokazującą wymaganą odwagę.[/center]"
